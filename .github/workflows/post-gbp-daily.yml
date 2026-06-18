@@ -1,0 +1,60 @@
+# ============================================================
+# GitHub Actions — GBP Daily Post
+# Axel SEO Digital Solutions
+#
+# ONDE ESTE ARQUIVO VAI:
+#   .github/workflows/post-gbp-daily.yml
+#   (na raiz do repositorio axel-gbp-media)
+#
+# SECRETS NECESSARIOS (Settings > Secrets and variables > Actions):
+#   GBP_REFRESH_TOKEN   — token de atualizacao OAuth do cliente
+#   GBP_CLIENT_ID       — client_id do OAuth app
+#   GBP_CLIENT_SECRET   — client_secret do OAuth app
+#
+# O cliente e selecionado pela variavel GBP_CLIENTE abaixo.
+# Para adicionar outro cliente, copie este workflow e altere
+# GBP_CLIENTE e os nomes dos secrets correspondentes.
+# ============================================================
+
+name: GBP Daily Post — Kadosh
+
+on:
+  # Roda todo dia as 9:00 AM ET (UTC-4 no verao, UTC-5 no inverno)
+  # Ajuste o horario conforme necessario:
+  #   13:00 UTC = 9:00 AM EDT (verao, mar-nov)
+  #   14:00 UTC = 9:00 AM EST (inverno, nov-mar)
+  schedule:
+    - cron: '0 13 * * *'
+
+  # Disparo manual — para testes e postagens fora de horario
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Data para postar (YYYY-MM-DD). Vazio = hoje.'
+        required: false
+        default: ''
+
+jobs:
+  post-card:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Postar card do dia no GBP
+        env:
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
+          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE:       kadosh
+          DATE_OVERRIDE:     ${{ github.event.inputs.date_override }}
+        run: |
+          echo "Data de hoje (UTC): $(date -u +%Y-%m-%d)"
+          echo "Cliente: $GBP_CLIENTE"
+          python post_gbp_action.py
+
+      - name: Reportar resultado
+        if: always()
+        run: |
+          echo "Workflow encerrado em $(date -u)"
