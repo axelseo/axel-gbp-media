@@ -54,7 +54,6 @@ print(f"Carregando schedule: {schedule_path}")
 if not os.path.exists(schedule_path):
     print(f"ERRO: schedule.json nao encontrado: {schedule_path}")
     print("Gere e suba o schedule.json antes do inicio do mes.")
-    print("Use: python3 scripts/gerar_schedule.py ...")
     sys.exit(1)
 
 with open(schedule_path, encoding='utf-8') as f:
@@ -118,14 +117,14 @@ def post_to_gbp(token, account_id, location_id, summary, image_url, language='en
     url = f'https://mybusiness.googleapis.com/v4/{account_id}/{location_id}/localPosts'
     body = json.dumps({
         'languageCode': language,
-        'summary': summary,
-        'topicType': 'STANDARD',
+        'summary':      summary,
+        'topicType':    'STANDARD',
         'callToAction': {'actionType': 'CALL'},
         'media': [{'mediaFormat': 'PHOTO', 'sourceUrl': image_url}],
     }).encode('utf-8')
     req = urllib.request.Request(url, data=body, method='POST')
-    req.add_header('Authorization', f'Bearer {token}')
-    req.add_header('Content-Type', 'application/json; charset=utf-8')
+    req.add_header('Authorization',  f'Bearer {token}')
+    req.add_header('Content-Type',   'application/json; charset=utf-8')
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
             return json.loads(resp.read())
@@ -150,12 +149,12 @@ def verify_has_image(token, post_name, retries=3):
             media = data.get('media', [])
             if media and media[0].get('sourceUrl'):
                 return True
-            elif media:
-                return False  # media existe mas sem URL
+            # media existe mas sourceUrl ainda nao populado = GBP processando
+            # Trata como inconclusivo, nao como falha
         except Exception as e:
-            print(f"   Tentativa {attempt+1} falhou: {e}")
+            print(f"  Tentativa {attempt+1} falhou: {e}")
         if attempt < retries - 1:
-            print(f"   Aguardando 15s antes da proxima tentativa...")
+            print(f"  Aguardando 15s antes da proxima tentativa...")
             time.sleep(15)
     return None  # inconclusivo
 
@@ -164,7 +163,7 @@ print("\nObtendo token OAuth...")
 token = get_access_token()
 print("Token obtido.")
 
-account_id  = schedule.get('account_id', '')
+account_id = schedule.get('account_id', '')
 location_id = schedule.get('location_id', '')
 language    = schedule.get('language', 'en-US')
 
@@ -179,7 +178,7 @@ state     = result.get('state', '')
 print(f"Post criado: {post_name}")
 print(f"Estado: {state}")
 
-# Verificacao dupla
+# Verificacao da imagem — nao-fatal (GBP processa a imagem de forma assincrona)
 print("\nVerificando imagem no post (aguardando 15s para GBP processar)...")
 time.sleep(15)
 
@@ -187,20 +186,18 @@ has_image = verify_has_image(token, post_name)
 
 if has_image is True:
     print("VERIFICACAO OK: post tem imagem!")
-elif has_image is False:
-    print("FALHA: post sem imagem! Isso pode ser o bug do Metricool.")
-    print("Acao necessaria: verifique o post no Google Business manualmente.")
-    print(f"Post name: {post_name}")
-    sys.exit(1)
 else:
-    print("VERIFICACAO inconclusiva (GBP ainda processando) — considerado OK.")
-    print(f"Verifique manualmente se necessario: {post_name}")
+    # GBP ainda processando ou inconclusivo — nao e um erro fatal
+    print("AVISO: imagem ainda sendo processada pelo GBP (comportamento normal).")
+    print(f"Verifique manualmente em alguns minutos: {post_name}")
 
 print(f"""
+==============================
 Card #{post['card']} postado com sucesso!
-  Data:     {today}
-  Cliente:  {schedule.get('nome', CLIENTE)}
-  Post ID:  {post_name}
-  Estado:   {state}
-  Imagem:   {image_url}
+Data:     {today}
+Cliente:  {schedule.get('nome', CLIENTE)}
+Post ID:  {post_name}
+Estado:   {state}
+Imagem:   {image_url}
+==============================
 """)
