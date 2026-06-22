@@ -5,6 +5,7 @@ Axel SEO Digital Solutions
 
 Posta o card do dia no Google Business Profile via API direta.
 Credenciais vem de GitHub Secrets (variaveis de ambiente).
+Suporta single location (location_id) ou multiplas (location_ids).
 
 Coloque este arquivo na RAIZ do repositorio axel-gbp-media.
 """
@@ -52,8 +53,7 @@ schedule_path = f"{CLIENTE}/{mes}/schedule.json"
 print(f"Carregando schedule: {schedule_path}")
 
 if not os.path.exists(schedule_path):
-    print(f"ERRO: schedule.json nao encontrado: {schedule_path}")
-    print("Gere e suba o schedule.json antes do inicio do mes.")
+    print(f"Sem schedule.json para {mes} ({schedule_path}). Nenhum post este mes.")
     sys.exit(0)
 
 with open(schedule_path, encoding='utf-8') as f:
@@ -130,11 +130,13 @@ def post_to_gbp(token, account_id, location_id, summary, image_url, language='en
             return json.loads(resp.read())
     except urllib.error.HTTPError as e:
         body = e.read().decode('utf-8', errors='ignore')
-        print(f"ERRO HTTP ao postar: {e.code} — {body}")
+        print(f"ERRO HTTP ao postar em {location_id}: {e.code} — {body}")
         if e.code == 401:
             print("Token invalido. Verifique o Secret GBP_REFRESH_TOKEN.")
+            sys.exit(1)
         elif e.code == 403:
             print("Permissao negada. Verifique account_id e location_id.")
+            sys.exit(1)
         sys.exit(1)
 
 # ── Verificar que o post tem imagem ──────────────────────────────────────────
@@ -149,8 +151,6 @@ def verify_has_image(token, post_name, retries=3):
             media = data.get('media', [])
             if media and media[0].get('sourceUrl'):
                 return True
-            # media existe mas sourceUrl ainda nao populado = GBP processando
-            # Trata como inconclusivo, nao como falha
         except Exception as e:
             print(f"  Tentativa {attempt+1} falhou: {e}")
         if attempt < retries - 1:
@@ -163,41 +163,60 @@ print("\nObtendo token OAuth...")
 token = get_access_token()
 print("Token obtido.")
 
-account_id = schedule.get('account_id', '')
-location_id = schedule.get('location_id', '')
-language    = schedule.get('language', 'en-US')
+account_id   = schedule.get('account_id', '')
+location_id  = schedule.get('location_id', '')
+location_ids = schedule.get('location_ids', [])
+language     = schedule.get('language', 'en-US')
 
-print(f"\nPostando no GBP...")
-print(f"  Account:  {account_id}")
-print(f"  Location: {location_id}")
-
-result = post_to_gbp(token, account_id, location_id, post['description'], image_url, language)
-
-post_name = result.get('name', '')
-state     = result.get('state', '')
-print(f"Post criado: {post_name}")
-print(f"Estado: {state}")
-
-# Verificacao da imagem — nao-fatal (GBP processa a imagem de forma assincrona)
-print("\nVerificando imagem no post (aguardando 15s para GBP processar)...")
-time.sleep(15)
-
-has_image = verify_has_image(token, post_name)
-
-if has_image is True:
-    print("VERIFICACAO OK: post tem imagem!")
+# Suporte a single location (location_id) ou multiplas (location_ids)
+if location_ids:
+    targets = location_ids
+elif location_id:
+    targets = [location_id]
 else:
-    # GBP ainda processando ou inconclusivo — nao e um erro fatal
-    print("AVISO: imagem ainda sendo processada pelo GBP (comportamento normal).")
-    print(f"Verifique manualmente em alguns minutos: {post_name}")
+    print("ERRO: nenhum location_id ou location_ids encontrado no schedule.json")
+    sys.exit(1)
 
+print(f"\nPostando em {len(targets)} localizacao(oes)...")
+print(f"  Account: {account_id}")
+
+resultados = []
+
+for i, lid in enumerate(targets, 1):
+    print(f"\n[{i}/{len(targets)}] Location: {lid}")
+    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language)
+    post_name = result.get('name', '')
+    state     = result.get('state', '')
+    print(f"  Post criado: {post_name}")
+    print(f"  Estado: {state}")
+
+    # Verificacao da imagem (nao-fatal)
+    print(f"  Verificando imagem (aguardando 15s para GBP processar)...")
+    time.sleep(15)
+    has_image = verify_has_image(token, post_name)
+    if has_image is True:
+        print(f"  VERIFICACAO OK: post tem imagem!")
+    else:
+        print(f"  AVISO: imagem ainda sendo processada pelo GBP (comportamento normal).")
+
+    resultados.append({'location': lid, 'post_name': post_name, 'state': state})
+
+    # Pausa entre localizacoes para nao sobrecarregar a API
+    if i < len(targets):
+        print("  Aguardando 5s antes da proxima localizacao...")
+        time.sleep(5)
+
+# ── Resumo final ──────────────────────────────────────────────────────────────
 print(f"""
 ==============================
 Card #{post['card']} postado com sucesso!
-Data:     {today}
-Cliente:  {schedule.get('nome', CLIENTE)}
-Post ID:  {post_name}
-Estado:   {state}
-Imagem:   {image_url}
+Data:           {today}
+Cliente:        {schedule.get('nome', CLIENTE)}
+Localizacoes:   {len(targets)}
+""")
+for r in resultados:
+    print(f"  {r['location']} → {r['post_name']} [{r['state']}]")
+print(f"""
+Imagem: {image_url}
 ==============================
 """)
