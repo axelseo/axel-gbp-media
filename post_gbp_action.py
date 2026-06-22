@@ -54,7 +54,7 @@ print(f"Carregando schedule: {schedule_path}")
 if not os.path.exists(schedule_path):
     print(f"ERRO: schedule.json nao encontrado: {schedule_path}")
     print("Gere e suba o schedule.json antes do inicio do mes.")
-    sys.exit(1)
+    sys.exit(0)
 
 with open(schedule_path, encoding='utf-8') as f:
     schedule = json.load(f)
