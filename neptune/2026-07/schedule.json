@@ -1,1 +1,24 @@
-[]
+{
+  "nome": "Neptune Laundromat",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/103061672225238659659",
+  "location_ids": [
+    "locations/17135877005086118725",
+    "locations/13858429171732557048",
+    "locations/12288246167292034111",
+    "locations/11324395197921717004",
+    "locations/14250475751944313403"
+  ],
+  "location_names": {
+    "locations/17135877005086118725": "East Boston",
+    "locations/13858429171732557048": "Malden",
+    "locations/12288246167292034111": "Revere",
+    "locations/11324395197921717004": "Lynn",
+    "locations/14250475751944313403": "Boston"
+  },
+  "language": "en-US",
+  "data_inicio": "2026-07-01",
+  "data_fim": "2026-07-31",
+  "posts": []
+}
