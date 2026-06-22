@@ -1,0 +1,34 @@
+# GitHub Actions — Postagem diária GBP | Neptune Laundromat
+# Arquivo: .github/workflows/post-neptune-daily.yml
+# Repositório: github.com/axelseo/axel-gbp-media
+#
+# Cron: todo dia às 13:00 UTC = 9:00 AM EDT
+# Posta o mesmo card nas 5 localizações Neptune simultaneamente.
+
+name: Post GBP Daily - Neptune Laundromat
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # 9:00 AM EDT (UTC-4)
+  workflow_dispatch:         # permite rodar manualmente
+
+jobs:
+  post-gbp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Post to GBP - Neptune (todas as lojas)
+        env:
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_NEPTUNE }}
+          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID_NEPTUNE }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET_NEPTUNE }}
+          GBP_CLIENTE:       neptune
+        run: python post_gbp_action.py
