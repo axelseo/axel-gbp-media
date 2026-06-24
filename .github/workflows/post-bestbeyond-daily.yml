@@ -1,0 +1,24 @@
+name: Post GBP Daily - Best Beyond Spa
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # 9:00 AM EDT
+  workflow_dispatch:
+
+jobs:
+  post-gbp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install google-auth google-auth-oauthlib requests
+      - name: Post to GBP - Best Beyond Spa
+        env:
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_BESTBEYOND }}
+          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE:       bestbeyond
+        run: python post_gbp_action.py
