@@ -1,15 +1,15 @@
 {
-  "nome": "Adriana's PMU",
+  "nome": "Adrianas Permanent Makeup",
   "github_username": "axelseo",
   "repo": "axel-gbp-media",
-  "account_id": "accounts/PREENCHER_APOS_AUTENTICACAO",
+  "account_id": "accounts/106913209167624384186",
   "location_ids": [
-    "locations/PREENCHER_SALEM_NH",
-    "locations/PREENCHER_WILMINGTON_MA"
+    "locations/6762723975425587498",
+    "locations/2706262564975577739"
   ],
   "location_names": {
-    "locations/PREENCHER_SALEM_NH": "Salem NH",
-    "locations/PREENCHER_WILMINGTON_MA": "Wilmington MA"
+    "locations/6762723975425587498": "Wilmington MA",
+    "locations/2706262564975577739": "Salem NH"
   },
   "language": "en-US",
   "data_inicio": "2026-07-01",
