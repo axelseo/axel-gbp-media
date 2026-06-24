@@ -1,0 +1,18 @@
+{
+  "nome": "Adriana's PMU",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/PREENCHER_APOS_AUTENTICACAO",
+  "location_ids": [
+    "locations/PREENCHER_SALEM_NH",
+    "locations/PREENCHER_WILMINGTON_MA"
+  ],
+  "location_names": {
+    "locations/PREENCHER_SALEM_NH": "Salem NH",
+    "locations/PREENCHER_WILMINGTON_MA": "Wilmington MA"
+  },
+  "language": "en-US",
+  "data_inicio": "2026-07-01",
+  "data_fim": "2026-07-31",
+  "posts": []
+}
