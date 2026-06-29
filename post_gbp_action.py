@@ -5,7 +5,6 @@ Axel SEO Digital Solutions
 
 Posta o card do dia no Google Business Profile via API direta.
 Credenciais vem de GitHub Secrets (variaveis de ambiente).
-Suporta single location (location_id) ou multiplas (location_ids).
 
 Coloque este arquivo na RAIZ do repositorio axel-gbp-media.
 """
@@ -53,8 +52,10 @@ schedule_path = f"{CLIENTE}/{mes}/schedule.json"
 print(f"Carregando schedule: {schedule_path}")
 
 if not os.path.exists(schedule_path):
-    print(f"Sem schedule.json para {mes} ({schedule_path}). Nenhum post este mes.")
-    sys.exit(0)
+    print(f"ERRO: schedule.json nao encontrado: {schedule_path}")
+    print("Gere e suba o schedule.json antes do inicio do mes.")
+    print("Use: python3 scripts/gerar_schedule.py ...")
+    sys.exit(1)
 
 with open(schedule_path, encoding='utf-8') as f:
     schedule = json.load(f)
@@ -113,30 +114,29 @@ def get_access_token():
     return token
 
 # ── Postar no GBP ─────────────────────────────────────────────────────────────
-def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US'):
+def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US', cta=None):
     url = f'https://mybusiness.googleapis.com/v4/{account_id}/{location_id}/localPosts'
-    body = json.dumps({
+    body_dict = {
         'languageCode': language,
-        'summary':      summary,
-        'topicType':    'STANDARD',
-        'callToAction': {'actionType': 'CALL'},
+        'summary': summary,
+        'topicType': 'STANDARD',
+        'callToAction': cta if cta else {'actionType': 'CALL'},
         'media': [{'mediaFormat': 'PHOTO', 'sourceUrl': image_url}],
-    }).encode('utf-8')
+    }
+    body = json.dumps(body_dict).encode('utf-8')
     req = urllib.request.Request(url, data=body, method='POST')
-    req.add_header('Authorization',  f'Bearer {token}')
-    req.add_header('Content-Type',   'application/json; charset=utf-8')
+    req.add_header('Authorization', f'Bearer {token}')
+    req.add_header('Content-Type', 'application/json; charset=utf-8')
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
             return json.loads(resp.read())
     except urllib.error.HTTPError as e:
         body = e.read().decode('utf-8', errors='ignore')
-        print(f"ERRO HTTP ao postar em {location_id}: {e.code} — {body}")
+        print(f"ERRO HTTP ao postar: {e.code} — {body}")
         if e.code == 401:
             print("Token invalido. Verifique o Secret GBP_REFRESH_TOKEN.")
-            sys.exit(1)
         elif e.code == 403:
             print("Permissao negada. Verifique account_id e location_id.")
-            sys.exit(1)
         sys.exit(1)
 
 # ── Verificar que o post tem imagem ──────────────────────────────────────────
@@ -151,10 +151,12 @@ def verify_has_image(token, post_name, retries=3):
             media = data.get('media', [])
             if media and media[0].get('sourceUrl'):
                 return True
+            elif media:
+                return False  # media existe mas sem URL
         except Exception as e:
-            print(f"  Tentativa {attempt+1} falhou: {e}")
+            print(f"   Tentativa {attempt+1} falhou: {e}")
         if attempt < retries - 1:
-            print(f"  Aguardando 15s antes da proxima tentativa...")
+            print(f"   Aguardando 15s antes da proxima tentativa...")
             time.sleep(15)
     return None  # inconclusivo
 
@@ -167,8 +169,9 @@ account_id   = schedule.get('account_id', '')
 location_id  = schedule.get('location_id', '')
 location_ids = schedule.get('location_ids', [])
 language     = schedule.get('language', 'en-US')
+cta_default  = schedule.get('cta')  # ex: {'actionType': 'BOOK', 'url': 'https://...'}
 
-# Suporte a single location (location_id) ou multiplas (location_ids)
+# Suporte a 1 localizacao (location_id) OU varias (location_ids)
 if location_ids:
     targets = location_ids
 elif location_id:
@@ -181,16 +184,18 @@ print(f"\nPostando em {len(targets)} localizacao(oes)...")
 print(f"  Account: {account_id}")
 
 resultados = []
-
 for i, lid in enumerate(targets, 1):
     print(f"\n[{i}/{len(targets)}] Location: {lid}")
-    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language)
+    cta = post.get('cta') or cta_default
+    if cta:
+        print(f"  CTA: {cta.get('actionType')} -> {cta.get('url','(sem url)')}")
+    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language, cta)
     post_name = result.get('name', '')
     state     = result.get('state', '')
     print(f"  Post criado: {post_name}")
     print(f"  Estado: {state}")
 
-    # Verificacao da imagem (nao-fatal)
+    # Verificacao da imagem (nao-fatal: GBP processa async)
     print(f"  Verificando imagem (aguardando 15s para GBP processar)...")
     time.sleep(15)
     has_image = verify_has_image(token, post_name)
@@ -201,22 +206,20 @@ for i, lid in enumerate(targets, 1):
 
     resultados.append({'location': lid, 'post_name': post_name, 'state': state})
 
-    # Pausa entre localizacoes para nao sobrecarregar a API
     if i < len(targets):
         print("  Aguardando 5s antes da proxima localizacao...")
         time.sleep(5)
 
-# ── Resumo final ──────────────────────────────────────────────────────────────
 print(f"""
 ==============================
 Card #{post['card']} postado com sucesso!
-Data:           {today}
-Cliente:        {schedule.get('nome', CLIENTE)}
-Localizacoes:   {len(targets)}
+  Data:        {today}
+  Cliente:     {schedule.get('nome', CLIENTE)}
+  Localizacoes:{len(targets)}
 """)
 for r in resultados:
-    print(f"  {r['location']} → {r['post_name']} [{r['state']}]")
+    print(f"  {r['location']} -> {r['post_name']} [{r['state']}]")
 print(f"""
-Imagem: {image_url}
+  Imagem: {image_url}
 ==============================
 """)
