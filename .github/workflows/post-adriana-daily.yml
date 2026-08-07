@@ -4,21 +4,44 @@ on:
   schedule:
     - cron: '0 13 * * *'   # 9:00 AM EDT
   workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Postar como se fosse esta data (YYYY-MM-DD). Vazio = hoje.'
+        required: false
+        default: ''
+      loja:
+        description: 'Qual loja postar'
+        required: false
+        default: 'ambas'
+        type: choice
+        options:
+          - ambas
+          - adriana-wilmington
+          - adriana-salem
 
 jobs:
   post-gbp:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false        # se uma loja falhar, a outra ainda posta
+      matrix:
+        cliente:
+          - adriana-wilmington
+          - adriana-salem
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install dependencies
-        run: pip install google-auth google-auth-oauthlib requests
-      - name: Post to GBP - Adriana PMU (Salem NH + Wilmington MA)
+      - name: Post to GBP - ${{ matrix.cliente }}
+        if: >-
+          github.event_name == 'schedule' ||
+          github.event.inputs.loja == 'ambas' ||
+          github.event.inputs.loja == matrix.cliente
         env:
           GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_ADRIANA }}
           GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID }}
           GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
-          GBP_CLIENTE:       adriana
+          GBP_CLIENTE:       ${{ matrix.cliente }}
+          DATE_OVERRIDE:     ${{ github.event.inputs.date_override }}
         run: python post_gbp_action.py
