@@ -52,10 +52,14 @@ schedule_path = f"{CLIENTE}/{mes}/schedule.json"
 print(f"Carregando schedule: {schedule_path}")
 
 if not os.path.exists(schedule_path):
-    print(f"ERRO: schedule.json nao encontrado: {schedule_path}")
-    print("Gere e suba o schedule.json antes do inicio do mes.")
-    print("Use: python3 scripts/gerar_schedule.py ...")
-    sys.exit(1)
+    # Sai com 0 de proposito: falta de conteudo do mes nao e erro tecnico.
+    # Com exit(1) o GitHub mandava e-mail de falha TODO DIA ate o conteudo subir,
+    # que era justamente o ruido que fazia ninguem mais olhar os e-mails.
+    # O ::warning:: deixa o run verde mas sinalizado na aba Actions.
+    print(f"::warning::Sem conteudo para {CLIENTE} em {mes}: {schedule_path} nao existe")
+    print(f"AVISO: schedule.json nao encontrado: {schedule_path}")
+    print("Suba o conteudo do mes antes do dia 1. Nenhum post foi feito hoje.")
+    sys.exit(0)
 
 with open(schedule_path, encoding='utf-8') as f:
     schedule = json.load(f)
