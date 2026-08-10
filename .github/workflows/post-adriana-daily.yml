@@ -26,7 +26,9 @@ jobs:
       fail-fast: false        # se uma loja falhar, a outra ainda posta
       matrix:
         cliente:
-          - adriana-wilmington
+          # Wilmington fica fora ate ter o link de agendamento proprio dela.
+          # Para religar: descomentar a linha abaixo.
+          # - adriana-wilmington
           - adriana-salem
     steps:
       - uses: actions/checkout@v4
