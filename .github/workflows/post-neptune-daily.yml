@@ -1,34 +1,70 @@
-# GitHub Actions — Postagem diária GBP | Neptune Laundromat
-# Arquivo: .github/workflows/post-neptune-daily.yml
-# Repositório: github.com/axelseo/axel-gbp-media
+# Postagem diaria GBP — Neptune Laundromat
 #
-# Cron: todo dia às 13:00 UTC = 9:00 AM EDT
-# Posta o mesmo card nas 5 localizações Neptune simultaneamente.
+# Cinco fichas, uma pasta por loja. O texto e a imagem sao os mesmos nas cinco,
+# mas cada loja roda os 31 cards numa ORDEM PROPRIA (Saratoga comeca no 1,
+# Bennington no 7, Lynn no 13, Malden no 19, Revere no 25) para nunca publicarem
+# o mesmo card no mesmo dia. O botao BOOK leva ao mesmo pedido no Cents,
+# mudando so o utm_campaign — e assim que se sabe de qual ficha veio o pedido.
+#
+# So a Saratoga faz pickup & delivery. As outras quatro anunciam o servico
+# dela; os textos ja dizem isso, citando 489 Saratoga Street.
+#
+# IMPORTANTE: use GBP_CLIENT_ID / GBP_CLIENT_SECRET (app da agencia, 41vlcbi2).
+# NAO use os secrets *_NEPTUNE — sao do app antigo e dao unauthorized_client.
+#
+# Para ligar as outras lojas: descomente a linha na matriz DEPOIS de subir
+# a pasta neptune-<loja>/ correspondente.
 
 name: Post GBP Daily - Neptune Laundromat
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9:00 AM EDT (UTC-4)
-  workflow_dispatch:         # permite rodar manualmente
+    - cron: '0 13 * * *'    # 13h UTC agendado; na pratica sai ~14h20 UTC
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Postar como se fosse esta data (YYYY-MM-DD). Vazio = hoje.'
+        required: false
+        default: ''
+      loja:
+        description: 'Qual loja postar'
+        required: false
+        default: 'todas'
+        type: choice
+        options:
+          - todas
+          - neptune-saratoga
+          - neptune-bennington
+          - neptune-lynn
+          - neptune-malden
+          - neptune-revere
 
 jobs:
   post-gbp:
     runs-on: ubuntu-latest
-
+    strategy:
+      fail-fast: false      # uma loja falhar nao impede as outras de postar
+      matrix:
+        cliente:
+          - neptune-saratoga
+          # - neptune-bennington
+          # - neptune-lynn
+          # - neptune-malden
+          # - neptune-revere
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Post to GBP - Neptune (todas as lojas)
+      - name: Post to GBP - ${{ matrix.cliente }}
+        if: >-
+          github.event_name == 'schedule' ||
+          github.event.inputs.loja == 'todas' ||
+          github.event.inputs.loja == matrix.cliente
         env:
           GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_NEPTUNE }}
-          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID_NEPTUNE }}
-          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET_NEPTUNE }}
-          GBP_CLIENTE:       neptune
+          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE:       ${{ matrix.cliente }}
+          DATE_OVERRIDE:     ${{ github.event.inputs.date_override }}
         run: python post_gbp_action.py
