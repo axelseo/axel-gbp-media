@@ -12,8 +12,8 @@
 # IMPORTANTE: use GBP_CLIENT_ID / GBP_CLIENT_SECRET (app da agencia, 41vlcbi2).
 # NAO use os secrets *_NEPTUNE — sao do app antigo e dao unauthorized_client.
 #
-# Para ligar as outras lojas: descomente a linha na matriz DEPOIS de subir
-# a pasta neptune-<loja>/ correspondente.
+# As cinco lojas estao ativas. Para pausar uma, comente a linha dela na matriz.
+#
 
 name: Post GBP Daily - Neptune Laundromat
 
@@ -47,10 +47,10 @@ jobs:
       matrix:
         cliente:
           - neptune-saratoga
-          # - neptune-bennington
-          # - neptune-lynn
-          # - neptune-malden
-          # - neptune-revere
+          - neptune-bennington
+          - neptune-lynn
+          - neptune-malden
+          - neptune-revere
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
