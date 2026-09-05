@@ -11,7 +11,7 @@
   },
   "data_inicio": "2026-09-04",
   "data_fim": "2026-09-30",
-  "total_posts": 26,
+  "total_posts": 27,
   "posts": [
     {
       "date": "2026-09-04",
@@ -21,6 +21,16 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://bestbeyondspa.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo&utm_content=card-3"
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "card": 1,
+      "filename": "CARD01.png",
+      "description": "Japanese Head Spa in Woburn, MA: scalp analysis, deep cleansing, and a massage built around your scalp. 🌿\n\nAt Best & Beyond Spa, this treatment cares for the scalp as skin, improving circulation and relieving tension held at the hairline. After a summer of sun, salt, and product buildup, September is a natural moment to reset it, and Best & Beyond is among the few in the Woburn area offering the full Japanese Head Spa.\n\nCurious what real scalp care feels like? Call Best & Beyond Spa in Woburn to schedule your Japanese Head Spa.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://bestbeyondspa.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo&utm_content=card-1"
       }
     },
     {
