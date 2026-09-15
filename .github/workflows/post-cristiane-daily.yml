@@ -1,0 +1,35 @@
+name: Post GBP Daily - Cristiane Barreto
+
+on:
+  # 9:00 AM ET. 13:00 UTC = 9h EDT (verao). Trocar para 14 em nov.
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Data para postar (YYYY-MM-DD). Vazio = hoje.'
+        required: false
+        default: ''
+
+jobs:
+  post-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Postar card do dia no GBP
+        env:
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_CRISTIANE }}
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE: cristiane
+          DATE_OVERRIDE: ${{ github.event.inputs.date_override }}
+        run: |
+          echo "Data de hoje (UTC): $(date -u +%Y-%m-%d)"
+          echo "Cliente: $GBP_CLIENTE"
+          python post_gbp_action.py
+
+      - name: Reportar resultado
+        if: always()
+        run: echo "Workflow encerrado em $(date -u)"

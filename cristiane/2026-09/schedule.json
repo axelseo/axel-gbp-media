@@ -1,0 +1,149 @@
+{
+  "cliente": "cristiane",
+  "nome": "Cristiane Barreto Business Consulting",
+  "mes": "2026-09",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "language": "en-US",
+  "account_id": "accounts/101555215686736100906",
+  "location_id": "locations/1211920200317935249",
+  "place_id": "ChIJKSmJaDW3HAIRxcKnixTTP10",
+  "ciclo": 1,
+  "total_posts": 11,
+  "data_inicio": "2026-09-15",
+  "data_fim": "2026-09-25",
+  "posts": [
+    {
+      "date": "2026-09-15",
+      "card": 1,
+      "filename": "01-cristiane-barreto-strategic-planning-winter-garden.jpg",
+      "description": "Most strategic plans die in the folder they were written in.\n\nThe meeting happens, the slides look good, and six months later nobody can say who owned what. The problem is rarely the thinking. It is that the session ended in intentions instead of decisions.\n\nStrategic planning here runs as a structured process: from vision, to choices, to execution. A three to five year direction, with the trade-offs made explicit and every priority assigned to a person and a date.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/strategic-planning-business-plan/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=strategic-planning"
+      },
+      "service": "Strategy & Business Planning",
+      "service_page": "strategic-planning-business-plan"
+    },
+    {
+      "date": "2026-09-16",
+      "card": 2,
+      "filename": "02-cristiane-barreto-culture-diagnostic-winter-garden.jpg",
+      "description": "Every company has values on a wall. Fewer can say what happens when those values cost money.\n\nThat distance, between the culture you declare and the one people actually live, is where strategy quietly stalls. Leadership says the plan is right and nothing moves, and nobody can point to why.\n\nA cultural diagnostic measures that gap with structured assessment rather than opinion, drawing on Schein, Barrett and Laloux, and returns a values report with an alignment roadmap.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/cultural-organizational-diagnostic/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=culture-diagnostic"
+      },
+      "service": "Cultural & Organizational Diagnostic",
+      "service_page": "cultural-organizational-diagnostic"
+    },
+    {
+      "date": "2026-09-17",
+      "card": 3,
+      "filename": "03-cristiane-barreto-business-structuring-winter-garden.jpg",
+      "description": "The most expensive mistake in a new business is building the complexity before building the business.\n\nRoles created because someone was hired. Processes invented to patch a problem. A structure that grew by accident and now cannot be changed without breaking something else.\n\nBusiness creation and structuring turns a defined concept into a coherent structure: strategy, positioning, business model, people, processes and governance, connected on purpose.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/business-creation-structuring/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=business-structuring"
+      },
+      "service": "Business Creation & Structuring",
+      "service_page": "business-creation-structuring"
+    },
+    {
+      "date": "2026-09-18",
+      "card": 4,
+      "filename": "04-cristiane-barreto-process-design-winter-garden.jpg",
+      "description": "Ask five leaders who makes a given decision and you will often get five answers. That is not a people problem. It is a design problem.\n\nWhen decision rights are unclear, everything routes through the same two or three people, work waits, and accountability dissolves into meetings.\n\nProcess design and role definition connects processes, roles, decision rights, accountability and priorities, so the strategy becomes something the team can execute without asking permission for every step.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/process-design-role-definition/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=process-design"
+      },
+      "service": "Process Design & Role Definition",
+      "service_page": "process-design-role-definition"
+    },
+    {
+      "date": "2026-09-19",
+      "card": 5,
+      "filename": "05-cristiane-barreto-corporate-governance-winter-garden.jpg",
+      "description": "Governance is not the existence of a board. Plenty of companies have one and are governed badly.\n\nIt shows up in how decisions get made, how responsibilities are assigned, how conflicts of interest are handled and how results are monitored. A company can have a board and none of that, or have all of that before it ever forms one.\n\nGovernance advisory builds the structure that fits the stage the business is actually in: charters, decision rights, and a real evaluation cycle.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/corporate-governance-board-advisory/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=corporate-governance"
+      },
+      "service": "Corporate Governance, Boards & Advisory",
+      "service_page": "corporate-governance-board-advisory"
+    },
+    {
+      "date": "2026-09-20",
+      "card": 6,
+      "filename": "06-cristiane-barreto-executive-coaching-winter-garden.jpg",
+      "description": "The higher you go, the fewer people will tell you the truth.\n\nSenior leaders end up with plenty of advisors and almost no space to think out loud without it becoming a signal to someone. Decisions get made in that vacuum.\n\nExecutive coaching here is a structured space to think, question and lead with more awareness. For CEOs and senior leaders navigating complexity, a transition, or a role that changed faster than they did.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/executive-coaching/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=executive-coaching"
+      },
+      "service": "Executive Coaching",
+      "service_page": "executive-coaching"
+    },
+    {
+      "date": "2026-09-21",
+      "card": 7,
+      "filename": "07-cristiane-barreto-career-mentoring-winter-garden.jpg",
+      "description": "Career transitions rarely fail for lack of competence. They fail for lack of a plan that survives contact with reality.\n\nPivoting industries, stepping into leadership for the first time, or deciding what the next decade should look like: all of it gets decided in a few months, usually while doing the current job full time.\n\nCareer mentoring gives that decision a structure, a roadmap, and someone accountable for checking whether you actually followed it.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/career-mentoring/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=career-mentoring"
+      },
+      "service": "Career Mentoring",
+      "service_page": "career-mentoring"
+    },
+    {
+      "date": "2026-09-22",
+      "card": 8,
+      "filename": "08-cristiane-barreto-disc-mbti-assessment-winter-garden.jpg",
+      "description": "Most team conflict is not about the work. It is about two people solving the same problem in ways the other cannot read.\n\nOne wants the decision now, the other wants the data first. Both are right, and both leave the meeting thinking the other is the obstacle.\n\nCertified DISC and MBTI Step II assessments make those preferences visible and workable, for individuals, leaders and whole teams, with a behavioral flexibility plan instead of a label.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/behavioral-profiling-disc-mbti/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=disc-mbti-assessment"
+      },
+      "service": "DISC + MBTI Behavioral Assessments",
+      "service_page": "behavioral-profiling-disc-mbti"
+    },
+    {
+      "date": "2026-09-23",
+      "card": 9,
+      "filename": "09-cristiane-barreto-360-performance-review-winter-garden.jpg",
+      "description": "There is how you see your leadership, and there is how the people around you experience it. The distance between the two is where most surprises live.\n\nA 360 review only helps when it is built as diagnosis and development rather than scoring. Otherwise it becomes an annual ritual everyone learns to game.\n\nStructured multisource feedback, designed so the result is a development conversation and not a number in a file.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/360-performance-review/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=360-performance-review"
+      },
+      "service": "360 Performance Review",
+      "service_page": "360-performance-review"
+    },
+    {
+      "date": "2026-09-24",
+      "card": 10,
+      "filename": "10-cristiane-barreto-keynote-speaking-winter-garden.jpg",
+      "description": "Every audience is different. Every keynote should start there.\n\nA talk written for a leadership offsite is not the talk for a company-wide kickoff, and neither is the talk for a conference where nobody knows you yet.\n\nKeynotes on leadership, culture, strategy, behavioral sciences and organizational transformation, built around the room instead of the slide deck. Delivered at UCF, UNLV, Miami Book Fair and the United Nations headquarters, among others.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/keynote-speaking/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=keynote-speaking"
+      },
+      "service": "Keynote Speaking",
+      "service_page": "keynote-speaking"
+    },
+    {
+      "date": "2026-09-25",
+      "card": 11,
+      "filename": "11-cristiane-barreto-leadership-training-winter-garden.jpg",
+      "description": "Development that starts from a training catalog teaches people things they will never use.\n\nThe question is not which course to buy. It is what this organization, with these people and this set of problems, needs its leaders to be able to do six months from now that they cannot do today.\n\nCorporate training and leadership programs designed backwards from that answer. Built for the context, not for the catalog.\n\nAdvisory in English, Portuguese and Spanish. Winter Garden and the Greater Orlando area.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://cristianebarreto.com/services/corporate-training/?utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=leadership-training"
+      },
+      "service": "Corporate Training & Leadership Development",
+      "service_page": "corporate-training"
+    }
+  ]
+}
