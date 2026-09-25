@@ -1,0 +1,48 @@
+{
+  "nome": "Adrianas Permanent Makeup - Wilmington MA",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/106913209167624384186",
+  "location_id": "locations/6762723975425587498",
+  "language": "en-US",
+  "data_inicio": "2026-09-25",
+  "data_fim": "2026-09-29",
+  "total_posts": 3,
+  "cadencia": "dia sim, dia nao (datas impares)",
+  "cta": {
+    "actionType": "BOOK",
+    "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma"
+  },
+  "posts": [
+    {
+      "date": "2026-09-25",
+      "card": 1,
+      "filename": "CARD01.jpg",
+      "description": "Permanent makeup belongs to everyone, and at Adriana's Permanent Makeup in Wilmington, MA, that belief shapes every appointment.\n\nFlawless brows, softly tinted lips, and defined eyes are not about changing who you are. They are about waking up as the most polished version of yourself, even on a dark October morning. Our studio is proudly women owned and welcoming to clients of every background, identity, and skin tone. With over 20 years of experience and more than 5,000 procedures performed, master artist Adriana Santos tailors every result to your natural features.\n\nHave you been waiting for a studio that treats your beauty as uniquely yours? Book your appointment at adrianaspmu.com and take the first step toward effortless, natural results.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-1"
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "card": 2,
+      "filename": "CARD02.jpg",
+      "description": "Microblading and nano brows both create natural hair like brows, but they use different tools and suit different skin types.\n\nAt Adriana's Permanent Makeup in Wilmington, MA, microblading uses a fine manual blade for soft, delicate strokes, while nano brows use a digital machine to deposit ultra fine strokes that hold up well on oily skin. Both are customized to your face shape and last 1 to 3 years with a follow up at 4 to 8 weeks. During your consultation, master artist Adriana Santos helps you choose the technique that fits your skin and lifestyle.\n\nNot sure which brow technique is right for you? Book a consultation at adrianaspmu.com and find your best match.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-2"
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "card": 3,
+      "filename": "CARD03.jpg",
+      "description": "Lip blush is a permanent makeup technique that adds soft, natural color and definition to your lips, so you can skip daily lipstick.\n\nAt Adriana's Permanent Makeup in Wilmington, MA, lip blush deposits gentle pigment to even out tone and enhance your natural lip shape. It is ideal for lips that look pale, uneven, or faded, and the color stays put through hot coffee, cold New England mornings, and every scarf you pull over your face. Results typically last 1 to 3 years, with an included touch up 4 to 8 weeks after your first session to perfect the tone.\n\nWould you love to wake up with a soft flush of color already in place? Book your lip blush appointment at adrianaspmu.com.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-3"
+      }
+    }
+  ]
+}

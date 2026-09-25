@@ -1,0 +1,48 @@
+{
+  "nome": "Adrianas Permanent Makeup - Salem NH",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/106913209167624384186",
+  "location_id": "locations/2706262564975577739",
+  "language": "en-US",
+  "data_inicio": "2026-09-25",
+  "data_fim": "2026-09-29",
+  "total_posts": 3,
+  "cadencia": "dia sim, dia nao (datas impares)",
+  "cta": {
+    "actionType": "BOOK",
+    "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh"
+  },
+  "posts": [
+    {
+      "date": "2026-09-25",
+      "card": 1,
+      "filename": "CARD01.jpg",
+      "description": "With over 20 years of experience and more than 5,000 procedures performed, Adriana's Permanent Makeup has become a trusted name across Southern New Hampshire.\n\nExperience matters in permanent makeup, because your face deserves a steady, practiced hand. Master artist Adriana Santos has spent two decades refining brow, lip, and eyeliner techniques, and every client works with a licensed, experienced artist who studies your features before a single stroke begins. That track record is why clients return and refer their friends.\n\nThe calendar fills quickly as the holiday season approaches. Book your appointment at adrianaspmu.com and put two decades of skill to work for you.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh&utm_content=post-1"
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "card": 2,
+      "filename": "CARD02.jpg",
+      "description": "Microblading uses delicate manual strokes to create natural, hair like brows that frame your face without looking drawn on.\n\nAt Adriana's Permanent Makeup in Salem, NH, microblading is one of the most requested brow services for clients across Southern New Hampshire and nearby towns like Windham, Derry, Methuen, Haverhill, and Lawrence. Each stroke is mapped to your natural brow shape, growth pattern, and skin tone, so results look soft from across the room and realistic up close. Microblading typically lasts 1 to 3 years, and a follow up session 4 to 8 weeks later perfects color and shape.\n\nFall is one of the easiest seasons to heal brows, with no sun or pool to work around. Book your microblading consultation at adrianaspmu.com.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh&utm_content=post-2"
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "card": 3,
+      "filename": "CARD03.jpg",
+      "description": "Ready for soft, naturally tinted lips? Lip blush at Adriana's Permanent Makeup in Salem, NH gives you fresh color with no daily upkeep.\n\nLip blush enhances your natural lip tone and shape with gentle pigment, so your lips look polished from morning to night and photograph beautifully at every holiday gathering. It is one of the studio's most requested services, customized to your tone and refined during an included follow up at 4 to 8 weeks. Results typically last 1 to 3 years.\n\nWould you love to skip lipstick and still look put together? Book your lip blush appointment at adrianaspmu.com today.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh&utm_content=post-3"
+      }
+    }
+  ]
+}

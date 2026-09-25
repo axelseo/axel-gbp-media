@@ -26,9 +26,10 @@ jobs:
       fail-fast: false        # se uma loja falhar, a outra ainda posta
       matrix:
         cliente:
-          # Wilmington fica fora ate ter o link de agendamento proprio dela.
-          # Para religar: descomentar a linha abaixo.
-          # - adriana-wilmington
+          # Wilmington religado em 25/09/2026: o CTA agora aponta para
+          # adrianaspmu.com/services/ com UTM propria da loja, entao nao
+          # depende mais de um link Fresha exclusivo da unidade.
+          - adriana-wilmington
           - adriana-salem
     steps:
       - uses: actions/checkout@v4
