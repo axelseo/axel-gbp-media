@@ -1,0 +1,43 @@
+name: Verificar posts de uma ficha
+
+# So a mao. Sem cron de proposito: este workflow nunca publica nada,
+# ele so le o estado dos posts que ja estao na ficha.
+on:
+  workflow_dispatch:
+    inputs:
+      cliente:
+        description: 'Pasta do cliente (ex: adriana-salem)'
+        required: true
+        type: choice
+        options:
+          - adriana-salem
+          - adriana-wilmington
+          - bestbeyond
+          - neptune-saratoga
+          - neptune-bennington
+          - neptune-lynn
+          - neptune-malden
+          - neptune-revere
+          - wedental
+          - cristiane
+      qtd:
+        description: 'Quantos posts recentes listar'
+        required: false
+        default: '10'
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Ler estado dos posts
+        env:
+          GBP_REFRESH_TOKEN: ${{ startsWith(github.event.inputs.cliente, 'adriana') && secrets.GBP_REFRESH_TOKEN_ADRIANA || startsWith(github.event.inputs.cliente, 'neptune') && secrets.GBP_REFRESH_TOKEN_NEPTUNE || github.event.inputs.cliente == 'bestbeyond' && secrets.GBP_REFRESH_TOKEN_BESTBEYOND || github.event.inputs.cliente == 'wedental' && secrets.GBP_REFRESH_TOKEN_WEDENTAL || secrets.GBP_REFRESH_TOKEN_CRISTIANE }}
+          GBP_CLIENT_ID:     ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE:       ${{ github.event.inputs.cliente }}
+          QTD:               ${{ github.event.inputs.qtd }}
+        run: python verificar_posts.py
