@@ -5,142 +5,44 @@
   "account_id": "accounts/103061672225238659659",
   "location_id": "locations/12288246167292034111",
   "language": "en-US",
-  "data_inicio": "2026-09-01",
-  "data_fim": "2026-09-13",
-  "total_posts": 13,
+  "data_inicio": "2026-09-26",
+  "data_fim": "2026-09-30",
+  "total_posts": 3,
+  "cadencia": "dia sim, dia nao",
+  "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
     "actionType": "BOOK",
-    "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere"
+    "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere"
   },
   "posts": [
     {
-      "date": "2026-09-01",
-      "card": 12,
-      "filename": "CARD12.png",
-      "description": "Neptune Laundry offers recurring pickup and delivery for customers who schedule regularly. Recurring orders are billed at a lower rate per pound than one time orders, and the pickup happens on the same rhythm each month without you rebooking it.\n\nRecurring service runs out of 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore.\n\nWould laundry stop being a decision if it simply happened on schedule? Set it once. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
+      "date": "2026-09-26",
+      "card": 1,
+      "filename": "CARD01.jpg",
+      "description": "Neptune Laundry's pickup and delivery service runs in four steps: schedule, leave your bag out, get your laundry washed and folded, receive it back at your door. This service operates from our 489 Saratoga Street location in East Boston, MA, and covers customers in Revere and the surrounding area.\n\nStep one: schedule a pickup through the Neptune app (available on iOS and Android) or online. Step two: leave your bag outside at the pickup window, no need to be home. Step three: Neptune's team at the Saratoga Street location washes, dries, and folds everything. Step four: your clothes come back folded and ready to put away. Neptune Laundry has been in operation since 1999, which means this process has been refined over 25 years of handling customers' laundry.\n\nEast Boston and Revere, MA are neighboring communities, so the route from our Saratoga Street location reaches Revere customers conveniently. Ready to hand off laundry entirely? Schedule your first pickup at our 489 Saratoga Street location through the Neptune app or online.",
       "cta": {
         "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-12"
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere&utm_content=card-1"
       }
     },
     {
-      "date": "2026-09-02",
-      "card": 13,
-      "filename": "CARD13.png",
-      "description": "Neptune Laundry serves customers in English, Spanish and Portuguese. In East Boston, Chelsea, Everett and Lynn that matters, because arranging a service should not depend on which language you are most comfortable in.\n\nPickup and delivery runs out of 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore. Any bag works, no sorting is needed, and wash dry fold is priced by the pound.\n\nHave you ever avoided calling a business because of the language on the other end? Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
+      "date": "2026-09-28",
+      "card": 2,
+      "filename": "CARD02.jpg",
+      "description": "Neptune Laundry offers $20 off your first pickup order with the code FIRST20, applicable when you schedule pickup through the 489 Saratoga Street location in East Boston, MA. This offer applies to first-time pickup and delivery customers and is redeemable through the Neptune app on iOS and Android, or online.\n\nThe pickup and delivery service at the Saratoga Street location in East Boston serves customers in Revere, MA and neighboring communities. Your first order follows the same process as any other: schedule through the app or online, leave your laundry out in any bag you have, and receive it back washed, dried, and folded at your door. The $20 off with code FIRST20 applies to that first order. Neptune Laundry has been in operation since 1999.\n\nReady to try pickup and delivery for the first time at a discount? Use code FIRST20 when you schedule your first pickup at our 489 Saratoga Street location in East Boston through the Neptune app or online.",
       "cta": {
         "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-13"
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere&utm_content=card-2"
       }
     },
     {
-      "date": "2026-09-03",
-      "card": 14,
-      "filename": "CARD14.png",
-      "description": "Greater Boston moves on September first. The City of Boston calls it Moving Day, and most residential leases in the city turn over on that date, which makes the last stretch of August the busiest packing period of the year. Linens, towels and bedding are the worst things to pack dirty.\n\nNeptune Laundry pickup and delivery runs out of 489 Saratoga Street in East Boston, MA, and covers fourteen cities and towns across Greater Boston and the North Shore. Send the soft goods out, pack the rest.\n\nIs your move already on the calendar? Get the laundry out of the way first. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
+      "date": "2026-09-30",
+      "card": 3,
+      "filename": "CARD03.jpg",
+      "description": "Neptune Laundry's pickup and delivery service, available from our 489 Saratoga Street location in East Boston, MA, accepts more than everyday clothing. Comforters, area rugs, and other oversized household items are accepted for pickup, washed with commercial-grade machines, and returned ready to use.\n\nLarge items are often the most inconvenient to wash at home and the most difficult to fit into a standard residential machine. A comforter that occupies an entire home washer and dryer can be handled in a single commercial cycle at Neptune's Saratoga Street location, then returned through the pickup route that serves Revere, MA and the surrounding area. Neptune Laundry has been in operation since 1999.\n\nIs there a comforter, rug, or bulky household item that has been sitting on your to-do list because it does not fit your home machine? Schedule a pickup at our 489 Saratoga Street location in East Boston through the Neptune app on iOS and Android, or online.",
       "cta": {
         "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-14"
-      }
-    },
-    {
-      "date": "2026-09-04",
-      "card": 15,
-      "filename": "CARD15.png",
-      "description": "Move in season fills Greater Boston with students, and dorm bedding is the first thing that needs washing and the last thing anyone plans for. Comforters, mattress pads and sheet sets all fit in a Neptune Laundry pickup order.\n\nThe service runs out of 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore, including Boston, Cambridge and Medford, where most campuses sit.\n\nMoving into a place with no washer in the building? That is exactly who this is for. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-15"
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "card": 16,
-      "filename": "CARD16.png",
-      "description": "Neptune Laundry washes every pickup and delivery order in its own facility. The laundry is not handed to a third party processor and it does not leave the company between your door and its return. It is washed at 489 Saratoga Street in East Boston, MA, by the same team that runs the store.\n\nNeptune has operated in the Greater Boston area since 1999. Twenty five years of doing this in house is why the process stays consistent.\n\nDo you actually know who is handling your clothes when you use a laundry app? Here you do. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-16"
-      }
-    },
-    {
-      "date": "2026-09-06",
-      "card": 17,
-      "filename": "CARD17.png",
-      "description": "Short term rental hosts in East Boston, Winthrop and downtown Boston run linens on a turnover clock. Neptune Laundry handles that volume through pickup and delivery, and commercial orders are priced per pound on negotiated terms rather than a fixed retail rate.\n\nThe route runs out of 489 Saratoga Street in East Boston, MA, minutes from Logan, and covers fourteen cities and towns across Greater Boston and the North Shore.\n\nAre your turnovers already tight without the laundry in them? Move it off your list. Schedule through the Neptune app on iOS or Android, or ask about a commercial account.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-17"
-      }
-    },
-    {
-      "date": "2026-09-07",
-      "card": 18,
-      "filename": "CARD18.png",
-      "description": "August humidity in Greater Boston is what makes towels smell before they are even dirty. Damp fabric sitting in a hamper builds odor fast, and a home dryer that never quite finishes the load makes it worse.\n\nCommercial washers and dryers run hotter and finish the load completely. Neptune Laundry pickup and delivery runs out of 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore. Beach towels, gym clothes and everything else go in the same bag, unsorted.\n\nDoes your laundry smell fine coming out and stale by the next day? Schedule a pickup through the Neptune app and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-18"
-      }
-    },
-    {
-      "date": "2026-09-08",
-      "card": 19,
-      "filename": "CARD19.png",
-      "description": "For anyone who should not be carrying a full laundry bag down three flights of stairs, Neptune Laundry pickup and delivery removes the lifting entirely. You leave the bag at your door and it comes back folded at your door.\n\nThe service runs out of 489 Saratoga Street in East Boston, MA, and covers fourteen cities and towns across Greater Boston and the North Shore. There is no sorting to do, any bag works, and wash dry fold is priced by the pound.\n\nDo you have a parent or a neighbor who has been managing this the hard way? This is the fix. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-19"
-      }
-    },
-    {
-      "date": "2026-09-09",
-      "card": 20,
-      "filename": "CARD20.png",
-      "description": "You can send care instructions with a Neptune Laundry pickup order. Items that should be washed cold, dried on low or kept out of the dryer can be flagged when you schedule, and the team follows what you write.\n\nPickup and delivery runs out of 489 Saratoga Street in East Boston, MA. Neptune does not offer dry cleaning, so anything requiring that service should go to a dry cleaner, but everything else can be handled to your specification.\n\nHave you avoided a laundry service because you did not trust it with one specific item? Say so on the order. Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-20"
-      }
-    },
-    {
-      "date": "2026-09-10",
-      "card": 21,
-      "filename": "CARD21.png",
-      "description": "Restaurants, salons, gyms, barbershops and medical offices across Greater Boston treat laundry as an operating cost rather than an errand. Neptune Laundry prices commercial pickup and delivery per pound on negotiated terms, based on your volume and your schedule.\n\nThe route runs out of 489 Saratoga Street in East Boston, MA, and covers fourteen cities and towns across Greater Boston and the North Shore. Neptune has served businesses in the area since 1999.\n\nIs your linen handling still improvised week to week? A negotiated account fixes that. Ask about commercial pickup and delivery through the Neptune app or online.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-21"
-      }
-    },
-    {
-      "date": "2026-09-11",
-      "card": 22,
-      "filename": "CARD22.png",
-      "description": "A weekly laundry run takes most households a few hours once you count sorting, washing, drying, folding and the trip itself. Wash dry fold pickup and delivery replaces all of it with a bag left at your door.\n\nNeptune Laundry runs the service out of 489 Saratoga Street in East Boston, MA, covering fourteen cities and towns across Greater Boston and the North Shore. Wash dry fold is priced by the pound with no subscription, so you can try a single order before committing to anything.\n\nWhen you add up what those hours are worth to you, does the math still favor doing it yourself? Schedule through the Neptune app and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-22"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "card": 23,
-      "filename": "CARD23.png",
-      "description": "Neptune Laundry has operated in the Greater Boston area since 1999. Twenty five years in the same business, in the same neighborhoods, with five locations still running, is the record behind every pickup order.\n\nPickup and delivery is handled at 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore. The laundry is washed in house by the Neptune team.\n\nWhen you hand someone your clothes, does it matter how long they have been doing this? Schedule through the Neptune app on iOS or Android and use code FIRST20 on a first order.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-23"
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "card": 24,
-      "filename": "CARD24.png",
-      "description": "Scheduling a Neptune Laundry pickup takes about a minute. Open the Neptune app on iOS or Android, or book online, choose your pickup window, tell us where the bag will be, and you are done. You can also call the location if you would rather talk to someone.\n\nPickup and delivery runs out of 489 Saratoga Street in East Boston, MA, and reaches fourteen cities and towns across Greater Boston and the North Shore.\n\nHave you been putting this off because you assumed there was a setup process? There is not. New customers save on a first order with code FIRST20.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-08-revere&utm_content=card-24"
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere&utm_content=card-3"
       }
     }
   ]
