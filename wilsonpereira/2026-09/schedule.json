@@ -1,0 +1,27 @@
+{
+  "cliente": "wilsonpereira",
+  "nome": "Wilson Pereira Advogado",
+  "mes": "2026-09",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "language": "pt-BR",
+  "account_id": "accounts/108204765485467156900",
+  "location_id": "locations/5132939190327202451",
+  "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://advogadowp.com/?utm_source=gbp&utm_medium=organic&utm_campaign=post-2026-10"
+  },
+  "posts": [
+    {
+      "date": "2026-09-30",
+      "card": 1,
+      "filename": "01-2026-09-30-advogado-em-dourados-ms.jpg",
+      "description": "Wilson Pereira é advogado inscrito na OAB/MS sob o número 31.070 e atende em Dourados, Mato Grosso do Sul, presencialmente e online. A atuação do escritório se concentra em cinco áreas: Holding Familiar, Planejamento Sucessório, Direito Previdenciário e INSS, Direito Bancário e Defesa em Busca e Apreensão.\n\nO primeiro contato serve para entender o que aconteceu, identificar a área jurídica envolvida e mostrar quais documentos importam. Muita gente chega sem saber o nome técnico do problema, e isso é normal. A orientação começa pela leitura do caso concreto, em linguagem clara.\n\nVocê tem uma dúvida sobre benefício do INSS, contrato com banco ou organização do patrimônio da família? Fale com o escritório Wilson Pereira Advogado, em Dourados/MS, e apresente a sua situação.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://advogadowp.com/sobre/?utm_source=gbp&utm_medium=organic&utm_campaign=post-2026-10&utm_content=card-01"
+      },
+      "title": "Conheça o advogado Wilson Pereira"
+    }
+  ]
+}
