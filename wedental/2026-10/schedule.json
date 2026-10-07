@@ -1,0 +1,36 @@
+{
+  "nome": "We Dental",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/113986905587764446733",
+  "location_id": "locations/3282000275023594819",
+  "language": "en-US",
+  "data_inicio": "2026-10-07",
+  "data_fim": "2026-10-08",
+  "cta": {
+    "actionType": "BOOK",
+    "url": "https://wedentalboca.com/contact/?utm_source=gbp&utm_medium=organic&utm_campaign=booking"
+  },
+  "posts": [
+    {
+      "date": "2026-10-07",
+      "card": 1,
+      "filename": "01-saturday-appointments.jpg",
+      "description": "Weekdays are not always easy. That is why We Dental in Boca Raton now sees patients on Saturdays, by appointment only.\n\nSaturday visits are scheduled in advance, so our team is ready for you the moment you arrive.\n\nSend us a message or call (728) 500-8505 to reserve your Saturday time.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/contact/?utm_source=gbp&utm_medium=organic&utm_campaign=saturday_appointments&utm_content=gbp-post-oct26"
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "card": 2,
+      "filename": "02-all-on-4-guide.jpg",
+      "description": "Missing most of your teeth, or tired of dentures that slip? All-on-4 uses four implants to hold a full fixed arch, often without bone grafting.\n\nAt We Dental in Boca Raton, Dr. Marcantonio has placed and taught dental implants for over 25 years. Our full arch guide explains how All-on-4 works, who it fits, and what recovery looks like.\n\nRead the guide, then book a consultation to see if it fits your case.",
+      "cta": {
+        "actionType": "LEARN_MORE",
+        "url": "https://wedentalboca.com/blog/all-on-4-dental-implants-boca-raton/?utm_source=gbp&utm_medium=organic&utm_campaign=all_on_4&utm_content=gbp-post-oct26"
+      }
+    }
+  ]
+}
