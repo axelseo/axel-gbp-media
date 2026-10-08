@@ -3,7 +3,6 @@ name: Post GBP Daily - WE Dental
 on:
   schedule:
     - cron: '0 13 * * *'   # 9:00 AM EDT
-    - cron: '47 23 7 10 *' # avulso 07/10/2026 19:47 EDT (post de sabado); remover depois
   workflow_dispatch:
 
 jobs:
