@@ -2,9 +2,9 @@ name: Post GBP Daily - AXEL
 
 on:
   # 13:05 UTC = 9h05 EDT / 8h05 EST. Os Reels saem ao meio-dia; a ficha sai antes.
-  # DESCOMENTE so depois de validar um post real:
-  # schedule:
-  #   - cron: '5 13 * * *'
+  # Validado em 21/10/2026 (A1 em vídeo, LIVE).
+  schedule:
+    - cron: '5 13 * * *'
   workflow_dispatch:
     inputs:
       date_override:
