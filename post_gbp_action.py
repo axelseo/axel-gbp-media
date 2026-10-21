@@ -85,6 +85,10 @@ image_url = (
     f"https://raw.githubusercontent.com/{github_username}/{repo}/main"
     f"/{CLIENTE}/{mes}/{post['filename']}"
 )
+# Post com video (opcional): "media_format": "VIDEO" e "media_path" relativo a pasta do cliente
+media_format = post.get('media_format', 'PHOTO')
+if post.get('media_path'):
+    image_url = f"https://raw.githubusercontent.com/{github_username}/{repo}/main/{CLIENTE}/{post['media_path']}"
 print(f"Imagem URL: {image_url}")
 
 # ── Obter access token via refresh token ─────────────────────────────────────
@@ -118,14 +122,14 @@ def get_access_token():
     return token
 
 # ── Postar no GBP ─────────────────────────────────────────────────────────────
-def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US', cta=None):
+def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US', cta=None, media_format='PHOTO'):
     url = f'https://mybusiness.googleapis.com/v4/{account_id}/{location_id}/localPosts'
     body_dict = {
         'languageCode': language,
         'summary': summary,
         'topicType': 'STANDARD',
         'callToAction': cta if cta else {'actionType': 'CALL'},
-        'media': [{'mediaFormat': 'PHOTO', 'sourceUrl': image_url}],
+        'media': [{'mediaFormat': media_format, 'sourceUrl': image_url}],
     }
     body = json.dumps(body_dict).encode('utf-8')
     req = urllib.request.Request(url, data=body, method='POST')
@@ -153,7 +157,7 @@ def verify_has_image(token, post_name, retries=3):
             with urllib.request.urlopen(req, timeout=30) as resp:
                 data = json.loads(resp.read())
             media = data.get('media', [])
-            if media and media[0].get('sourceUrl'):
+            if media and (media[0].get('sourceUrl') or media[0].get('googleUrl')):
                 return True
             elif media:
                 return False  # media existe mas sem URL
@@ -193,7 +197,7 @@ for i, lid in enumerate(targets, 1):
     cta = post.get('cta') or cta_default
     if cta:
         print(f"  CTA: {cta.get('actionType')} -> {cta.get('url','(sem url)')}")
-    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language, cta)
+    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language, cta, media_format)
     post_name = result.get('name', '')
     state     = result.get('state', '')
     print(f"  Post criado: {post_name}")

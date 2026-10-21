@@ -1,0 +1,170 @@
+{
+ "cliente": "axel",
+ "nome": "Axel SEO",
+ "mes": "2026-12",
+ "github_username": "axelseo",
+ "repo": "axel-gbp-media",
+ "language": "pt-BR",
+ "account_id": "accounts/108666439194634918108",
+ "location_id": "locations/6201528094579927400",
+ "data_inicio": "2026-12-01",
+ "data_fim": "2026-12-29",
+ "posts": [
+  {
+   "date": "2026-12-01",
+   "card": 18,
+   "filename": "videos/D1.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/D1.mp4",
+   "description": "As IAs que buscam na internet montam a resposta com o que encontram escrito sobre o negócio: site, ficha, avaliações, notícias. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=D1"
+   }
+  },
+  {
+   "date": "2026-12-03",
+   "card": 19,
+   "filename": "videos/A7.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A7.mp4",
+   "description": "Nome, endereço ou região e telefone precisam aparecer do mesmo jeito no site e na ficha do Google. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A7"
+   }
+  },
+  {
+   "date": "2026-12-05",
+   "card": 20,
+   "filename": "videos/B7.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B7.mp4",
+   "description": "Anúncio local precisa ter a região definida igual no anúncio, no site e na ficha do Google. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B7"
+   }
+  },
+  {
+   "date": "2026-12-08",
+   "card": 21,
+   "filename": "videos/D2.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/D2.mp4",
+   "description": "Não existe truque para aparecer na resposta da IA do Google. Valem as mesmas boas práticas de sempre, segundo o próprio Google. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=D2"
+   }
+  },
+  {
+   "date": "2026-12-10",
+   "card": 22,
+   "filename": "videos/A8.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A8.mp4",
+   "description": "Uma página para cada serviço principal ajuda a pessoa a decidir e deixa claro o que você faz. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A8"
+   }
+  },
+  {
+   "date": "2026-12-12",
+   "card": 23,
+   "filename": "videos/B8.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B8.mp4",
+   "description": "Sem medir de onde vem o cliente, toda decisão sobre anúncio vira chute. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B8"
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "card": 24,
+   "filename": "videos/D3.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/D3.mp4",
+   "description": "A IA e o cliente entendem frases claras, o que você faz, onde e como funciona, não frase bonita e vaga. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=D3"
+   }
+  },
+  {
+   "date": "2026-12-17",
+   "card": 25,
+   "filename": "videos/A9.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A9.mp4",
+   "description": "O aviso de \"não seguro\" aparece quando o site não tem HTTPS, o cadeado. Muitas hospedagens incluem o certificado sem custo extra. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A9"
+   }
+  },
+  {
+   "date": "2026-12-19",
+   "card": 26,
+   "filename": "videos/B9.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B9.mp4",
+   "description": "Tráfego pago é aluguel: parou de pagar, acabou. Site, ficha do Google, avaliações e conteúdo são o que fica. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B9"
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "card": 27,
+   "filename": "videos/D4.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/D4.mp4",
+   "description": "A IA usa muitas vezes as avaliações da ficha do Google para falar de um negócio. Oferecer algo em troca da avaliação é contra as regras do Google. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=D4"
+   }
+  },
+  {
+   "date": "2026-12-24",
+   "card": 28,
+   "filename": "videos/A10.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A10.mp4",
+   "description": "O domínio do site precisa estar no nome de quem é dono do negócio, com o acesso guardado com essa pessoa. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A10"
+   }
+  },
+  {
+   "date": "2026-12-26",
+   "card": 29,
+   "filename": "videos/B10.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B10.mp4",
+   "description": "Anúncio com afirmação enganosa ou não comprovável viola as regras das plataformas e pode restringir a conta. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B10"
+   }
+  },
+  {
+   "date": "2026-12-29",
+   "card": 30,
+   "filename": "videos/D5.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/D5.mp4",
+   "description": "Nome, telefone e endereço ou região escritos do mesmo jeito em todo lugar ajudam o Google e a IA a confiar na informação. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=D5"
+   }
+  }
+ ]
+}

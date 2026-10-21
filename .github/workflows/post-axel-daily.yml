@@ -1,0 +1,44 @@
+name: Post GBP Daily - AXEL
+
+on:
+  # 13:05 UTC = 9h05 EDT / 8h05 EST. Os Reels saem ao meio-dia; a ficha sai antes.
+  # DESCOMENTE so depois de validar um post real:
+  # schedule:
+  #   - cron: '5 13 * * *'
+  workflow_dispatch:
+    inputs:
+      date_override:
+        description: 'Data para postar (YYYY-MM-DD). Vazio = hoje.'
+        required: false
+        default: ''
+
+jobs:
+  post-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            post_gbp_action.py
+            axel/2026-10
+            axel/2026-11
+            axel/2026-12
+            axel/2027-01
+          sparse-checkout-cone-mode: false
+
+      - name: Postar card do dia no GBP
+        env:
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN_AXEL }}
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_CLIENTE: axel
+          DATE_OVERRIDE: ${{ github.event.inputs.date_override }}
+        run: |
+          echo "Data de hoje (UTC): $(date -u +%Y-%m-%d)"
+          echo "Cliente: $GBP_CLIENTE"
+          python post_gbp_action.py
+
+      - name: Reportar resultado
+        if: always()
+        run: echo "Workflow encerrado em $(date -u)"

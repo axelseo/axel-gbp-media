@@ -1,0 +1,74 @@
+{
+ "cliente": "axel",
+ "nome": "Axel SEO",
+ "mes": "2026-10",
+ "github_username": "axelseo",
+ "repo": "axel-gbp-media",
+ "language": "pt-BR",
+ "account_id": "accounts/108666439194634918108",
+ "location_id": "locations/6201528094579927400",
+ "data_inicio": "2026-10-21",
+ "data_fim": "2026-10-31",
+ "posts": [
+  {
+   "date": "2026-10-21",
+   "card": 1,
+   "filename": "videos/A1.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A1.mp4",
+   "description": "Seu site aparece no Google? Um teste de 10 segundos mostra se o Google já guardou as páginas do seu site. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A1"
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "card": 2,
+   "filename": "videos/B1.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B1.mp4",
+   "description": "Anúncio precisa de uma página para onde levar o cliente. Sem ela, você paga pelo clique e perde a pessoa. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B1"
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "card": 3,
+   "filename": "videos/C1.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/C1.mp4",
+   "description": "Redes sociais são terreno alugado. O site é o único terreno que é seu, e é para ele que a ficha e as redes apontam. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=C1"
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "card": 4,
+   "filename": "videos/A2.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A2.mp4",
+   "description": "O Google usa a versão de celular do seu site para entender a página. Site que quebra no celular perde cliente. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A2"
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "card": 5,
+   "filename": "videos/B2.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B2.mp4",
+   "description": "Quem visitou o seu site e saiu sem pedir orçamento pode ver o seu anúncio de novo, se o público de remarketing estiver criado. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B2"
+   }
+  }
+ ]
+}

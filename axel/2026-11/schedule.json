@@ -1,0 +1,158 @@
+{
+ "cliente": "axel",
+ "nome": "Axel SEO",
+ "mes": "2026-11",
+ "github_username": "axelseo",
+ "repo": "axel-gbp-media",
+ "language": "pt-BR",
+ "account_id": "accounts/108666439194634918108",
+ "location_id": "locations/6201528094579927400",
+ "data_inicio": "2026-11-03",
+ "data_fim": "2026-11-28",
+ "posts": [
+  {
+   "date": "2026-11-03",
+   "card": 6,
+   "filename": "videos/C2.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/C2.mp4",
+   "description": "Cada página do site é mais uma chance de alguém te achar procurando exatamente o seu serviço. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=C2"
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "card": 7,
+   "filename": "videos/A3.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A3.mp4",
+   "description": "Telefone e WhatsApp no site precisam ser botões que ligam com um toque. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A3"
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "card": 8,
+   "filename": "videos/B3.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B3.mp4",
+   "description": "Impulsionar post dá alcance, mas pouco controle. No Gerenciador de Anúncios você escolhe objetivo, público e mede cada anúncio. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B3"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "card": 9,
+   "filename": "videos/C3.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/C3.mp4",
+   "description": "A ficha é a porta de quem procura um serviço perto de onde está. Ficha não verificada ou com horário errado é porta trancada. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=C3"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "card": 10,
+   "filename": "videos/A4.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A4.mp4",
+   "description": "O título da página muitas vezes vira a linha azul do seu site no Google. \"Home\" não diz nada a quem procura. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A4"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "card": 11,
+   "filename": "videos/B4.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B4.mp4",
+   "description": "Anúncio com objetivo de engajamento procura quem curte, não quem pede orçamento. Meça pedidos, não aplausos. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B4"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "card": 12,
+   "filename": "videos/C4.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/C4.mp4",
+   "description": "Quem gosta das suas redes procura o nome da sua empresa no Google. Site, ficha com avaliações e telefone que liga precisam aparecer. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=C4"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "card": 13,
+   "filename": "videos/A5.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A5.mp4",
+   "description": "Texto escrito na página explica o serviço de forma mais clara do que texto só dentro de uma imagem, para o cliente e para o Google. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A5"
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "card": 14,
+   "filename": "videos/B5.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B5.mp4",
+   "description": "A experiência na página de destino faz parte do índice de qualidade do anúncio no Google Ads. Página que combina com o anúncio é o que o Google pede. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B5"
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "card": 15,
+   "filename": "videos/C5.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/C5.mp4",
+   "description": "O letreiro, o logo e as cores precisam ser iguais no caminhão, no cartão, no site e nas redes para as pessoas reconhecerem o mesmo negócio. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=C5"
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "card": 16,
+   "filename": "videos/A6.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/A6.mp4",
+   "description": "Site rápido ajuda a experiência na página, mas conteúdo útil vem primeiro. Foto gigante e pesada costuma ser o motivo da demora. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=A6"
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "card": 17,
+   "filename": "videos/B6.mp4",
+   "media_format": "VIDEO",
+   "media_path": "videos/B6.mp4",
+   "description": "Cada mudança grande no anúncio reinicia a fase de aprendizado na Meta, e o anúncio editado passa de novo pela revisão. Faça o diagnóstico de visibilidade gratuito.",
+   "cta": {
+    "actionType": "LEARN_MORE",
+    "url": "https://axelseo.com/pt/visivel/?o=gbp&utm_source=gbp&utm_medium=organic&utm_campaign=post&utm_content=B6"
+   }
+  }
+ ]
+}
