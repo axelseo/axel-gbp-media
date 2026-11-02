@@ -7,7 +7,7 @@
   "language": "en-US",
   "data_inicio": "2026-11-01",
   "data_fim": "2026-11-17",
-  "total_posts": 10,
+  "total_posts": 9,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
@@ -23,16 +23,6 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-bennington&utm_content=card-19"
-      }
-    },
-    {
-      "date": "2026-11-02",
-      "card": 28,
-      "filename": "CARD28.jpg",
-      "description": "Neptune Laundry's operating principle since 1999 has been straightforward: \"Where the customer is always king.\" At 944 Bennington Street in East Boston, that means a clean facility, trained attendant staff, well-maintained machines, and hours that fit real schedules (5:30 AM to midnight, every day of the year).\n\nThat principle extends to the wash and fold service, where clothes are handled with care, to commercial accounts with flexible scheduling and pricing built around the business's needs, and to the residential pickup and delivery service operated through the Saratoga Street location, where no sorting is required and clothes come back neatly folded.\n\nNeptune Laundry is open every day of the year at 944 Bennington Street in East Boston. Stop by, schedule a pickup online, or contact us about commercial accounts. The customer is always king here.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-bennington&utm_content=card-28"
       }
     },
     {
@@ -115,5 +105,6 @@
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-bennington&utm_content=card-27"
       }
     }
-  ]
+  ],
+  "nota": "O post de 02/11 (CARD28, card de reserva) foi publicado a mao as 00h55 EST e a entrada foi removida para o cron nao repetir."
 }

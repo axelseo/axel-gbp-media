@@ -7,7 +7,7 @@
   "language": "en-US",
   "data_inicio": "2026-11-01",
   "data_fim": "2026-11-17",
-  "total_posts": 10,
+  "total_posts": 9,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
@@ -23,16 +23,6 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-saratoga&utm_content=card-19"
-      }
-    },
-    {
-      "date": "2026-11-02",
-      "card": 28,
-      "filename": "CARD28.jpg",
-      "description": "Neptune Laundry at 489 Saratoga Street in East Boston, MA accepts credit and debit cards at the washers. No coins required, no coin machine lines, no arriving to realize you do not have the right change. Tap or swipe your card and your cycle starts.\n\nFor residents of East Boston who no longer carry cash regularly, card payment at the laundromat removes one more friction point from the visit. Combined with free dryers, free WiFi, and machines open from 5:30 AM to midnight every day, the experience is straightforward from start to finish.\n\nStop in at 489 Saratoga Street any day you need. Pay by card, run your load, and let the dryers finish the job for free.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-saratoga&utm_content=card-28"
       }
     },
     {
@@ -115,5 +105,6 @@
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-saratoga&utm_content=card-27"
       }
     }
-  ]
+  ],
+  "nota": "O post de 02/11 (CARD28, card de reserva) foi publicado a mao as 00h55 EST e a entrada foi removida para o cron nao repetir."
 }
