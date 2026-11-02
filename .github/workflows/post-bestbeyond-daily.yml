@@ -2,7 +2,8 @@ name: Post GBP Daily - Best Beyond Spa
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9:00 AM EDT
+    - cron: '0 9 * * *'    # 9h UTC = 4h EST. A fila do GitHub atrasa 3h a 6h,
+                           # entao a publicacao cai por volta de 7h-10h EST.
   workflow_dispatch:
     inputs:
       date_override:
