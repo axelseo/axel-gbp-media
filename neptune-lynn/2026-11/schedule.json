@@ -7,7 +7,7 @@
   "language": "en-US",
   "data_inicio": "2026-11-01",
   "data_fim": "2026-11-17",
-  "total_posts": 9,
+  "total_posts": 10,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
@@ -23,6 +23,16 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-lynn&utm_content=card-19"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "card": 28,
+      "filename": "CARD28.jpg",
+      "description": "Neptune Laundromat at 822 Western Avenue in Lynn, MA accepts drop-off laundry every day of the year starting at 5:30 AM. Attendants handle the complete wash, dry, and fold process, and customers return later to pick up their clothes clean and ready to put away. Arriving early in the morning or midweek typically results in the fastest turnaround for drop-off orders.\n\nThe drop-off service at this Lynn location uses the active ozone washing system, which eliminates 99.9% of bacteria and odors through the wash cycle. Dryers are always free, and no advance scheduling is required for drop-off service at any time during operating hours.\n\nHave you been holding off on using a laundry drop-off service because you were uncertain about how quickly you would get your clothes back? At Neptune Laundromat at 822 Western Avenue in Lynn, drop-off service is available every day with no appointment. Stop by any time to get started.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-lynn&utm_content=card-28"
       }
     },
     {

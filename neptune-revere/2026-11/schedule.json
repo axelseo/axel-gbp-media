@@ -7,7 +7,7 @@
   "language": "en-US",
   "data_inicio": "2026-11-01",
   "data_fim": "2026-11-17",
-  "total_posts": 9,
+  "total_posts": 10,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
@@ -23,6 +23,16 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere&utm_content=card-19"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "card": 28,
+      "filename": "CARD28.jpg",
+      "description": "The difference between an ozone wash and a standard wash cycle is that ozone targets bacteria and odor compounds at a chemical level, while a standard cycle removes surface-level dirt primarily through heat, detergent, and mechanical action. Neptune Laundry's ozone system, confirmed to eliminate up to 99.9% of bacteria and odors per wash, is available at the Revere, MA location at 151 Veterans of Foreign Wars Pkwy.\n\nPeople with sensitive skin or allergies sometimes notice a difference with ozone laundry: the wash removes biological residue that standard cycles leave behind, which can reduce irritation caused by residual bacteria on fabric. The ozone process also works effectively at a range of water temperatures, which is relevant for items that cannot be washed in hot water but still need deep sanitation.\n\nIs your current wash cycle doing enough for items that contact your skin directly every day? Stop by Neptune Laundry in Revere, MA any day from 5:30 AM to midnight. No appointment needed.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-revere&utm_content=card-28"
       }
     },
     {

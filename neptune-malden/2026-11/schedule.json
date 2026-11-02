@@ -7,7 +7,7 @@
   "language": "en-US",
   "data_inicio": "2026-11-01",
   "data_fim": "2026-11-17",
-  "total_posts": 9,
+  "total_posts": 10,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de junho/2026 da propria loja, embaralhado",
   "cta": {
@@ -23,6 +23,16 @@
       "cta": {
         "actionType": "BOOK",
         "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-malden&utm_content=card-19"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "card": 28,
+      "filename": "CARD28.jpg",
+      "description": "Seasonal businesses in the Greater Boston area, including summer hospitality operations, landscaping companies, sports camps, and catering services, often have laundry needs that spike at certain times of year. Neptune Laundry's commercial program accommodates flexible scheduling, including higher-volume periods, without locking businesses into rigid weekly minimums.\n\nNeptune Laundry has operated commercial accounts since 1999, building scheduling flexibility into the structure of its business relationships. Businesses near Malden, Medford, and Everett are within the commercial service area.\n\nDoes your business in Massachusetts have laundry needs that change month to month or season to season? Neptune Laundry's commercial program can be structured around your actual output. Contact us to discuss an arrangement that works for your business in the Malden, MA area.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://app.trycents.com/new-order/OW43/home?utm_source=gbp&utm_medium=post&utm_campaign=2026-10-malden&utm_content=card-28"
       }
     },
     {
