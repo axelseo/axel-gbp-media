@@ -19,7 +19,8 @@ name: Post GBP Daily - Neptune Laundromat
 
 on:
   schedule:
-    - cron: '0 9 * * *'    # 13h UTC agendado; na pratica sai ~14h20 UTC
+    - cron: '0 9 * * *'    # 9h UTC = 4h EST. A fila do GitHub atrasa 3h a 6h,
+                           # entao a publicacao cai por volta de 7h-10h EST.
   workflow_dispatch:
     inputs:
       date_override:
