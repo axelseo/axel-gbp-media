@@ -5,9 +5,9 @@
   "account_id": "accounts/106913209167624384186",
   "location_id": "locations/2706262564975577739",
   "language": "en-US",
-  "data_inicio": "2026-11-02",
+  "data_inicio": "2026-11-04",
   "data_fim": "2026-11-30",
-  "total_posts": 15,
+  "total_posts": 14,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de agosto/2026 da propria loja, embaralhado",
   "cta": {
@@ -15,16 +15,6 @@
     "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh"
   },
   "posts": [
-    {
-      "date": "2026-11-02",
-      "card": 1,
-      "filename": "CARD01.jpg",
-      "description": "Faded brow pigment can be reset, but the first step is reading what is still in the skin. Old work often heals to a cool gray or a warm orange as the original pigment breaks down, and correcting that means neutralizing the remaining tone before new strokes go in. Our Salem, New Hampshire studio schedules correction separately from a standard touch up, because the assessment takes real time. Have your brows drifted to a color you never chose? Book a consultation to have the pigment evaluated.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh&utm_content=post-1"
-      }
-    },
     {
       "date": "2026-11-04",
       "card": 2,
@@ -165,5 +155,6 @@
         "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-salem-nh&utm_content=post-15"
       }
     }
-  ]
+  ],
+  "nota": "O post de 02/11 (CARD01) foi publicado a mao as 00h35 EST e a entrada foi removida para o cron nao repetir."
 }

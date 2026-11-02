@@ -5,9 +5,9 @@
   "account_id": "accounts/106913209167624384186",
   "location_id": "locations/6762723975425587498",
   "language": "en-US",
-  "data_inicio": "2026-11-02",
+  "data_inicio": "2026-11-04",
   "data_fim": "2026-11-30",
-  "total_posts": 15,
+  "total_posts": 14,
   "cadencia": "dia sim, dia nao",
   "origem": "conteudo de agosto/2026 da propria loja, embaralhado",
   "cta": {
@@ -15,16 +15,6 @@
     "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma"
   },
   "posts": [
-    {
-      "date": "2026-11-02",
-      "card": 1,
-      "filename": "CARD01.jpg",
-      "description": "Microblading creates individual hairstrokes. Powder brows create a soft diffused shade, closer to the look of brow powder applied well. Microblading reads more natural up close, powder holds better on oily skin and reads more defined from a distance, and a combination of both is often the right answer. At our Wilmington, Massachusetts studio all three fall under the same eyebrow micropigmentation service. Which finish did you picture when you first thought about this? Book a consultation to see both mapped on your face.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-1"
-      }
-    },
     {
       "date": "2026-11-04",
       "card": 2,
@@ -165,5 +155,6 @@
         "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-15"
       }
     }
-  ]
+  ],
+  "nota": "O post de 02/11 (CARD01) foi publicado a mao as 00h35 EST e a entrada foi removida para o cron nao repetir."
 }
