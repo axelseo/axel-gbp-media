@@ -1,0 +1,112 @@
+{
+ "cliente": "spalenza",
+ "nome": "Spalenza Spa",
+ "mes": "2026-11",
+ "github_username": "axelseo",
+ "repo": "axel-gbp-media",
+ "language": "en-US",
+ "account_id": "accounts/103317715284012066682",
+ "location_id": "locations/14823087540895669183",
+ "posts": [
+  {
+   "date": "2026-11-09",
+   "card": 1,
+   "filename": "01-spalenza-massage.jpg",
+   "description": "Your shoulders called — they'd like an hour off. Swedish or Deep Tissue massage, 60 or 90 minutes, here in Danvers. Book online.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/book/services/iSfXG9Uf-UgGlBhVNAR2nZwT-me35hhVW1NDru4A0Y8?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p01-massage"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "card": 2,
+   "filename": "02-spalenza-headspa.jpg",
+   "description": "Japanese Head Spa in Danvers: warm water, a slow scalp massage and light therapy. 60 or 90 minutes.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/book/services/fcs2kn9YfIufC5LmxbFZskGVvojNgQPd0aZ-5Yc3J9w?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p02-headspa"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "card": 3,
+   "filename": "03-spalenza-facials.jpg",
+   "description": "Not sure which facial to book? Signature Custom for routine care, Oxygen Lift for dull skin, SkinCeuticals for sun damage and fine lines, Glow & Smooth before an event, HydraFacial for clogged pores.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/book/services/fcs2kn9YfIufC5LmxbFZsvjla8-eSYP7J1svSez8fn4?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p03-facials"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "card": 4,
+   "filename": "04-spalenza-silvane.jpg",
+   "description": "Meet Silvane Spalenza, owner of Spalenza in Danvers — hair, laser and advanced skin treatments, with a team that knows your name.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/book/salons/spalenzaspa?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p04-silvane"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "card": 5,
+   "filename": "05-spalenza-hair.jpg",
+   "description": "Three color transformations from our salon team this week. Book a color consultation online.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/book/salons/spalenzaspa?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p05-hair"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "card": 6,
+   "filename": "06-spalenza-glowpass.jpg",
+   "description": "Glow Pass: one 50-minute facial every month plus 10% off products (6-month minimum).",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/buy/membership/iSfXG9Uf-UgGlBhVNAR2neQlDICT293DL5P6mqfY5cI?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p06-glowpass"
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "card": 7,
+   "filename": "07-spalenza-hydrafacial.jpg",
+   "description": "HydraFacial Signature: cleanse, extract and hydrate in 30 minutes with zero downtime.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/book/services/fcs2kn9YfIufC5LmxbFZsrJiIv_OsVEuwnZ7xv8FaN8?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p07-hydrafacial"
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "card": 8,
+   "filename": "08-spalenza-giftguide.jpg",
+   "description": "Not sure what to get this holiday season? Here's a hint: a Japanese Head Spa, HydraFacial, Laser Hair Removal, a Half Day Spa Package, a couples day, Stay the Day or the Glow Pass. Because the best gifts are experiences worth remembering. Spalenza Spa gift cards are available online.",
+   "cta": {
+    "actionType": "ORDER",
+    "url": "https://gift-cards.phorest.com/salons/spalenzaspa?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p08-giftguide"
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "card": 9,
+   "filename": "09-spalenza-couples.jpg",
+   "description": "Couples Half Day: side-by-side massage, then a facial or Japanese Head Spa for each of you.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/salon/spalenzaspa/book/service-groups/iSfXG9Uf-UgGlBhVNAR2nVGIoncBv4EkgLl6g1ZridU?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p09-couples"
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "card": 10,
+   "filename": "10-spalenza-tour.jpg",
+   "description": "Take a look inside Spalenza at 75 Newbury St: our lounge, head spa room, couples suite, facial room and salon. Book your visit online.",
+   "cta": {
+    "actionType": "BOOK",
+    "url": "https://www.phorest.com/book/salons/spalenzaspa?utm_source=google&utm_medium=organic&utm_campaign=gbp_post_nov2026&utm_content=p10-tour"
+   }
+  }
+ ]
+}
