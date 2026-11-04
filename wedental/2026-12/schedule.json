@@ -1,0 +1,168 @@
+{
+  "nome": "We Dental",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/113986905587764446733",
+  "location_id": "locations/3282000275023594819",
+  "language": "en-US",
+  "cadencia": "dia sim, dia nao",
+  "data_inicio": "2026-12-01",
+  "data_fim": "2026-12-30",
+  "total_posts": 15,
+  "cta": {
+    "actionType": "BOOK",
+    "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12"
+  },
+  "posts": [
+    {
+      "date": "2026-12-01",
+      "card": 14,
+      "filename": "CARD14.png",
+      "description": "Botox relaxes the specific muscle that creates a line. It does not fill, and it does not erase a face. A result that looks frozen is a result that treated too much in too many places, which is a planning problem rather than a product problem. We Glow at We Dental in Boca Raton, Florida treats conservatively and reviews the result with you. Would you rather look rested, or look treated? Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-14"
+      }
+    },
+    {
+      "date": "2026-12-03",
+      "card": 15,
+      "filename": "CARD15.png",
+      "description": "An empty space does not stay still. Neighboring teeth drift toward the gap, the opposing tooth drops down looking for contact and the bite gradually redistributes force onto teeth that were never meant to carry it. What began as one missing tooth becomes a bite problem involving several. Replacing early is usually the smaller treatment, not the bigger one. We Dental in Boca Raton, Florida will show you where your bite is heading. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-15"
+      }
+    },
+    {
+      "date": "2026-12-05",
+      "card": 16,
+      "filename": "CARD16.png",
+      "description": "A smile makeover is a coordinated plan, not a single procedure. It can combine whitening, gum contouring, bonding, porcelain veneers and sometimes an implant or a crown, sequenced so each step supports the next. Whitening usually comes first, because ceramic does not change color later. That order is the part most people never hear about.\n\nAt We Dental in Boca Raton, Florida, you see the sequence and the reasoning before anything begins. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-16"
+      }
+    },
+    {
+      "date": "2026-12-07",
+      "card": 17,
+      "filename": "CARD17.png",
+      "description": "Full mouth rehabilitation is what happens when several separate problems turn out to be one problem. Worn edges, a cracked molar, an old crown that no longer matches and a bite that has quietly collapsed are usually connected, and treating them one at a time in random order is how patients end up redoing work. Sequencing is the treatment. We Dental in Boca Raton, Florida is rated 5.0 by 149 patients, and complex cases are where that shows. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-17"
+      }
+    },
+    {
+      "date": "2026-12-09",
+      "card": 18,
+      "filename": "CARD18.png",
+      "description": "Your expression is how people read you. Treating the whole upper face at maximum dose flattens that, and it is the single most common reason someone dislikes their result. Conservative placement softens the lines that bother you while leaving the movement that makes your face yours. Reviewing the result together and adjusting is part of the process, not an admission of error. We Glow at We Dental in Boca Raton, Florida works that way by design. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-18"
+      }
+    },
+    {
+      "date": "2026-12-11",
+      "card": 19,
+      "filename": "CARD19.png",
+      "description": "Age by itself does not rule out a dental implant. What matters is bone volume, gum health and how well your general health supports healing, which are things a scan and a conversation can establish quickly. Many patients in Boca Raton, Florida assume they missed the window and never ask. That assumption costs more than the consultation would. Have you decided you are not a candidate without anyone actually looking? Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-19"
+      }
+    },
+    {
+      "date": "2026-12-13",
+      "card": 20,
+      "filename": "CARD20.png",
+      "description": "A smile is read as a whole, and the frame around the teeth is the gum line. When gums sit low and cover part of the enamel, teeth look short and square no matter how good the ceramic is. Gum contouring reshapes that border so tooth proportion reads correctly. It is often the quiet step that makes a veneer case look natural instead of merely white. We Dental in Boca Raton, Florida assesses the gums before designing anything. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-20"
+      }
+    },
+    {
+      "date": "2026-12-15",
+      "card": 21,
+      "filename": "CARD21.png",
+      "description": "Bone heals and skin heals. Tooth enamel does not. A crack in a tooth stays a crack and widens under normal chewing pressure until the tooth splits or the nerve is reached. A dental crown covers the whole tooth and holds it together, which is why timing matters more than the procedure itself. If you have a tooth you avoid chewing on, that avoidance is information. We Dental in Boca Raton, Florida looks at it before it becomes an extraction. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-21"
+      }
+    },
+    {
+      "date": "2026-12-17",
+      "card": 22,
+      "filename": "CARD22.png",
+      "description": "A dentist studies facial muscles and facial proportion every single working day. That anatomy is the same map used for Botox, which is why treatment inside a dental office tends to respect how your face actually moves. We Glow is the facial aesthetics side of We Dental in Boca Raton, Florida, built on the same planning discipline as our smile work. The goal is a rested face that still looks like you. When you picture a good result, does it look like a softer version of your own face? Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-22"
+      }
+    },
+    {
+      "date": "2026-12-19",
+      "card": 23,
+      "filename": "CARD23.png",
+      "description": "A missing tooth is not only a cosmetic problem. The jaw bone under an empty space stops receiving pressure from chewing and slowly loses volume, which shifts the neighboring teeth and changes how the lower face sits. A dental implant replaces the root, not just the visible crown, so the bone keeps working.\n\nAt We Dental in Boca Raton, Florida, every implant plan starts with your bite and your face, and we say so when you do not need one. Have you been postponing a replacement because the gap does not show when you smile? Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-23"
+      }
+    },
+    {
+      "date": "2026-12-21",
+      "card": 24,
+      "filename": "CARD24.png",
+      "description": "Order matters in cosmetic dentistry. Professional whitening changes the color of natural enamel. Porcelain does not respond to whitening at all, so if veneers or a crown are placed first, your natural teeth can never be brightened to match them later without redoing the ceramic. Whitening comes first, then the ceramic is matched to the new shade. It is a small sequencing decision with a permanent consequence. We Dental in Boca Raton, Florida plans it in the right order. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-24"
+      }
+    },
+    {
+      "date": "2026-12-23",
+      "card": 25,
+      "filename": "CARD25.png",
+      "description": "Older crowns were often made with a metal core under the ceramic, which is why they can read gray at the gum line and stay flat while natural teeth around them change. Newer full ceramic materials transmit light closer to the way enamel does. If one tooth in your smile looks slightly dead in photographs, this is usually the reason and it is fixable. We Dental in Boca Raton, Florida checks the old work before designing anything new. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-25"
+      }
+    },
+    {
+      "date": "2026-12-26",
+      "card": 26,
+      "filename": "CARD26.png",
+      "description": "Microneedling and facial peels work on skin texture and tone, which is the surface everything else sits on. Scheduled around a smile makeover rather than at random, they let the skin settle before the day the new smile is delivered and photographed. Sequencing turns two separate treatments into one result. We Glow at We Dental in Boca Raton, Florida plans that calendar with you in a single conversation. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-26"
+      }
+    },
+    {
+      "date": "2026-12-28",
+      "card": 27,
+      "filename": "CARD27.png",
+      "description": "The hardest part of a front tooth implant is not the implant. It is the crown that has to disappear next to the tooth beside it, matching color, translucency at the edge and the exact shape of the gum around it. That is cosmetic work sitting on top of surgical work, and it is why a front implant is planned differently from a molar. We Dental in Boca Raton, Florida treats the visible ones as cosmetic cases from the first appointment. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-27"
+      }
+    },
+    {
+      "date": "2026-12-30",
+      "card": 28,
+      "filename": "CARD28.png",
+      "description": "Bonded porcelain veneers are strong enough for normal eating from the day they are placed. You bite into an apple, you drink coffee, you laugh without checking a mirror first. The habits that actually shorten their life are the same ones that damage natural teeth: chewing ice, opening packaging with your teeth and untreated night grinding. Care is ordinary.\n\nAt We Dental in Boca Raton, Florida you leave knowing exactly what that means. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-12&utm_content=card-28"
+      }
+    }
+  ]
+}

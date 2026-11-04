@@ -1,0 +1,48 @@
+{
+  "nome": "We Dental",
+  "github_username": "axelseo",
+  "repo": "axel-gbp-media",
+  "account_id": "accounts/113986905587764446733",
+  "location_id": "locations/3282000275023594819",
+  "language": "en-US",
+  "cadencia": "dia sim, dia nao",
+  "data_inicio": "2027-01-02",
+  "data_fim": "2027-01-06",
+  "total_posts": 3,
+  "cta": {
+    "actionType": "BOOK",
+    "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2027-01"
+  },
+  "posts": [
+    {
+      "date": "2027-01-02",
+      "card": 29,
+      "filename": "CARD29.png",
+      "description": "Full mouth dental implants are fixed to the jaw bone, so they do not come out at night and do not shift while you talk. That is the practical difference between an implant supported arch and a removable denture. You brush them, you eat with them and you forget they are there. We Dental in Boca Raton, Florida plans full mouth cases around bone volume, bite force and facial support, not around a template. Does the idea of taking your teeth out every night still feel normal to you? Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2027-01&utm_content=card-29"
+      }
+    },
+    {
+      "date": "2027-01-04",
+      "card": 30,
+      "filename": "CARD30.png",
+      "description": "A dental crown covers and protects one damaged tooth that is still in your mouth. A dental bridge replaces a tooth that is already gone by anchoring to the teeth on either side. One saves, the other replaces, and they are answers to different questions. Mixing them up is common and it changes the cost and the timeline.\n\nAt We Dental in Boca Raton, Florida, the explanation comes before the treatment plan. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2027-01&utm_content=card-30"
+      }
+    },
+    {
+      "date": "2027-01-06",
+      "card": 31,
+      "filename": "CARD31.png",
+      "description": "Your teeth sit inside a face. Skin quality, lip support and the lines around the mouth are part of how a smile reads, which is why We Glow and our dental work are planned in the same room. Microneedling and facial peels address skin texture, Botox softens lines of expression and fillers restore support where volume has been lost. One conversation, one plan. We Dental in Boca Raton, Florida is rated 5.0 by 149 patients for exactly this kind of coordinated care. Book your appointment.",
+      "cta": {
+        "actionType": "BOOK",
+        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2027-01&utm_content=card-31"
+      }
+    }
+  ]
+}
