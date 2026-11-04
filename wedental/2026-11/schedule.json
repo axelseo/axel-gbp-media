@@ -6,24 +6,14 @@
   "location_id": "locations/3282000275023594819",
   "language": "en-US",
   "cadencia": "dia sim, dia nao",
-  "data_inicio": "2026-11-04",
+  "data_inicio": "2026-11-06",
   "data_fim": "2026-11-29",
-  "total_posts": 13,
+  "total_posts": 12,
   "cta": {
     "actionType": "BOOK",
     "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-11"
   },
   "posts": [
-    {
-      "date": "2026-11-04",
-      "card": 1,
-      "filename": "CARD01.png",
-      "description": "Most of a dental implant timeline is healing, not appointments. The implant is placed, then the bone grows against the titanium surface over a period of months, and only after that does the final crown go on. You are not in a dental chair for that stretch, you are living normally. Understanding this changes the whole conversation about whether now is a good time. We Dental in Boca Raton, Florida maps your phases before you commit to anything. Book your appointment.",
-      "cta": {
-        "actionType": "BOOK",
-        "url": "https://wedentalboca.com/?utm_source=gbp&utm_medium=post&utm_campaign=wedental-2026-11&utm_content=card-1"
-      }
-    },
     {
       "date": "2026-11-06",
       "card": 2,
