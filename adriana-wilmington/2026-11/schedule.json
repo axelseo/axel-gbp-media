@@ -154,7 +154,22 @@
         "actionType": "BOOK",
         "url": "https://adrianaspmu.com/services/?utm_source=gbp&utm_medium=organic&utm_campaign=main_link_to_website_localo-wilmington-ma&utm_content=post-15"
       }
+    },
+    {
+      "date": "2026-11-BF",
+      "card": 99,
+      "filename": "BF-BLACK20.jpg",
+      "description": "Black Friday at Adriana's Permanent Makeup in Wilmington, MA: 20% off selected permanent makeup services for brows, lips and eyeliner. Use promo code BLACK20 when you request your appointment, valid through November 30, 2026. Brows and lips need about four weeks to heal, so booking now means a soft, natural look in time for the holidays. Tap the offer, send your request and our team will confirm your date.",
+      "offer": {
+        "title": "Black Friday: 20% Off Selected PMU Services",
+        "start": "2026-11-16",
+        "end": "2026-11-30",
+        "coupon": "BLACK20",
+        "redeem_url": "https://adrianaspmu.com/?promo=black20&utm_source=gbp&utm_medium=organic&utm_campaign=black-friday-2026&utm_content=offer-wilmington",
+        "terms": "20% off selected permanent makeup services at Adriana's Permanent Makeup (Wilmington, MA and Salem, NH). Mention promo code BLACK20 when you request your appointment by November 30, 2026. Our team confirms which services qualify and your appointment date."
+      }
     }
   ],
-  "nota": "O post de 02/11 (CARD01) foi publicado a mao as 00h35 EST e a entrada foi removida para o cron nao repetir."
+  "nota": "O post de 02/11 (CARD01) foi publicado a mao as 00h35 EST e a entrada foi removida para o cron nao repetir.",
+  "nota_oferta_bf": "Oferta Black Friday com data 2026-11-BF: o cron nunca casa com ela; sai so pelo disparo manual com date_override=2026-11-BF."
 }
