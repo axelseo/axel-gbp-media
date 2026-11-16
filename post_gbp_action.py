@@ -122,7 +122,12 @@ def get_access_token():
     return token
 
 # ── Postar no GBP ─────────────────────────────────────────────────────────────
-def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US', cta=None, media_format='PHOTO'):
+def _data_gbp(iso):
+    y, m, d = (int(x) for x in iso.split('-'))
+    return {'year': y, 'month': m, 'day': d}
+
+
+def post_to_gbp(token, account_id, location_id, summary, image_url, language='en-US', cta=None, media_format='PHOTO', offer=None):
     url = f'https://mybusiness.googleapis.com/v4/{account_id}/{location_id}/localPosts'
     body_dict = {
         'languageCode': language,
@@ -131,6 +136,27 @@ def post_to_gbp(token, account_id, location_id, summary, image_url, language='en
         'callToAction': cta if cta else {'actionType': 'CALL'},
         'media': [{'mediaFormat': media_format, 'sourceUrl': image_url}],
     }
+    # Post de OFERTA (opcional, so quando o post do schedule traz "offer").
+    # O Google ignora o callToAction em oferta: o botao "Ver oferta" leva ao
+    # redeem_url. Formato no schedule.json:
+    #   "offer": {"title": "...", "start": "YYYY-MM-DD", "end": "YYYY-MM-DD",
+    #             "coupon": "CODIGO", "redeem_url": "https://...", "terms": "..."}
+    if offer:
+        body_dict['topicType'] = 'OFFER'
+        body_dict.pop('callToAction', None)
+        body_dict['event'] = {
+            'title': offer['title'],
+            'schedule': {'startDate': _data_gbp(offer['start']), 'endDate': _data_gbp(offer['end'])},
+        }
+        oferta = {}
+        if offer.get('coupon'):
+            oferta['couponCode'] = offer['coupon']
+        if offer.get('redeem_url'):
+            oferta['redeemOnlineUrl'] = offer['redeem_url']
+        if offer.get('terms'):
+            oferta['termsConditions'] = offer['terms']
+        if oferta:
+            body_dict['offer'] = oferta
     body = json.dumps(body_dict).encode('utf-8')
     req = urllib.request.Request(url, data=body, method='POST')
     req.add_header('Authorization', f'Bearer {token}')
@@ -197,7 +223,7 @@ for i, lid in enumerate(targets, 1):
     cta = post.get('cta') or cta_default
     if cta:
         print(f"  CTA: {cta.get('actionType')} -> {cta.get('url','(sem url)')}")
-    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language, cta, media_format)
+    result = post_to_gbp(token, account_id, lid, post['description'], image_url, language, cta, media_format, post.get('offer'))
     post_name = result.get('name', '')
     state     = result.get('state', '')
     print(f"  Post criado: {post_name}")
@@ -231,3 +257,4 @@ print(f"""
   Imagem: {image_url}
 ==============================
 """)
+
